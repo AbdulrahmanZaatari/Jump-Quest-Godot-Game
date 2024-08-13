@@ -1,7 +1,9 @@
-CollisionShape2D
-Camera2D
+Sprite2D
+TileMap
 Node
 Timer
+CollisionShape2D
 Area2D
-Sprite2D
+AnimationPlayer
+Camera2D
 RigidBody2D

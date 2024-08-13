@@ -1,4 +1,3 @@
-res://Scenes/game.tscn
 res://Scenes/level_1.tscn
 res://Scenes/player.tscn
 res://Scenes/killzone.tscn
@@ -9,5 +8,9 @@ res://Scenes/level_menu.tscn
 res://Scenes/main_page.tscn
 res://Scenes/falling-platform.tscn
 res://Scenes/level_2.tscn
-res://Scripts/scene_3.gd
-res://Scripts/level_menu.gd
+res://Scenes/spike.tscn
+res://Scripts/spike.gd
+res://Scenes/Trampoline.tscn
+res://Scenes/background.tscn
+res://Scenes/coin.tscn
+res://Scripts/coin.gd
