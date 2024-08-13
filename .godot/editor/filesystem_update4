@@ -10,3 +10,4 @@ res://Scenes/main_page.tscn
 res://Scenes/falling-platform.tscn
 res://Scenes/level_2.tscn
 res://Scripts/scene_3.gd
+res://Scripts/level_menu.gd
