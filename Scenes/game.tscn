@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://ca5yg6ocl2x4b"]
+[gd_scene load_steps=39 format=3 uid="uid://ca5yg6ocl2x4b"]
 
 [ext_resource type="PackedScene" uid="uid://b83vurwigomb0" path="res://Scenes/player.tscn" id="1_kvjl4"]
 [ext_resource type="Texture2D" uid="uid://dn1wwiey1wed7" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_ossku"]
@@ -9,6 +9,7 @@
 [ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="8_k8m0w"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="9_5kbaj"]
 [ext_resource type="PackedScene" uid="uid://cg0wnvd8s2j4r" path="res://Scenes/slime.tscn" id="9_7hasg"]
+[ext_resource type="PackedScene" uid="uid://b2ilxq60moh1t" path="res://Scenes/falling-platform.tscn" id="11_ilg58"]
 [ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="11_jmk0i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vvhwr"]
@@ -968,3 +969,6 @@ position = Vector2(2346, 83)
 
 [node name="slime" parent="Slimes" instance=ExtResource("9_7hasg")]
 position = Vector2(1900, 147)
+
+[node name="falling-platform" parent="." instance=ExtResource("11_ilg58")]
+position = Vector2(370, 34)
