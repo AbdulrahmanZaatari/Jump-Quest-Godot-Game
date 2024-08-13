@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=3 uid="uid://cwxeohusobc2r"]
+
+[ext_resource type="Script" path="res://Scripts/scene1.gd" id="1_e3lh8"]
+[ext_resource type="Texture2D" uid="uid://dlgwuq7wq5il" path="res://Assets/mainMenu images/1.png" id="2_w5yk6"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="3_c1vl1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b5kn4"]
+bg_color = Color(0.125167, 0.555116, 0.172612, 1)
+border_color = Color(0.00885786, 0.00852144, 0.0041839, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(1.05286e-08, 0.0881887, 1.20327e-08, 0.6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w08o7"]
+bg_color = Color(0.185948, 0.362486, 0.189242, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pqqk"]
+bg_color = Color(0.184314, 0.360784, 0.188235, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4wuok"]
+bg_color = Color(0.12549, 0.556863, 0.172549, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3kuo"]
+bg_color = Color(0.184314, 0.360784, 0.188235, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_61ram"]
+bg_color = Color(0.184314, 0.360784, 0.188235, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="scene1" type="Node2D"]
+script = ExtResource("1_e3lh8")
+
+[node name="box1" type="Sprite2D" parent="."]
+position = Vector2(589.75, 318.75)
+scale = Vector2(0.60651, 0.598611)
+texture = ExtResource("2_w5yk6")
+
+[node name="Next1" type="Button" parent="."]
+offset_left = 1016.0
+offset_top = 556.0
+offset_right = 1150.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("3_c1vl1")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_b5kn4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w08o7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7pqqk")
+text = "Next"
+
+[node name="Back1" type="Button" parent="."]
+offset_left = 37.0
+offset_top = 570.0
+offset_right = 174.0
+offset_bottom = 627.0
+theme_override_fonts/font = ExtResource("3_c1vl1")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_4wuok")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v3kuo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_61ram")
+text = "Back"
+
+[connection signal="pressed" from="Next1" to="." method="_on_next_1_pressed"]
+[connection signal="pressed" from="Back1" to="." method="_on_back_1_pressed"]
