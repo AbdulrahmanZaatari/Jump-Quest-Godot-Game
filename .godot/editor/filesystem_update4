@@ -1,0 +1,13 @@
+res://Scenes/game.tscn
+res://Scenes/player.tscn
+res://Scenes/killzone.tscn
+res://Scenes/scene1.tscn
+res://Scripts/scene_2.gd
+res://Scenes/scene_2.tscn
+res://Scripts/scene_3.gd
+res://Scripts/scene1.gd
+res://Scripts/main_page.gd
+res://Scripts/level_menu.gd
+res://Scenes/scene_3.tscn
+res://Scenes/level_menu.tscn
+res://Scenes/main_page.tscn

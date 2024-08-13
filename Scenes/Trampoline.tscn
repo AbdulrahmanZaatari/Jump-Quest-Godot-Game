@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cyrw8wdr5vnj"]
+
+[ext_resource type="Texture2D" uid="uid://bmgpnn4fa4kid" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/trampolines.png" id="1_7dsgd"]
+[ext_resource type="Script" path="res://Scripts/Trampoline.gd" id="1_scjts"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b0bwb"]
+radius = 6.40312
+
+[node name="Trampoline" type="Area2D"]
+position = Vector2(-387, -206)
+collision_mask = 2
+script = ExtResource("1_scjts")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(357.59, 177.25)
+scale = Vector2(1.10702, 1.15625)
+texture = ExtResource("1_7dsgd")
+region_enabled = true
+region_rect = Rect2(0, 0, 17.737, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(358, 180)
+shape = SubResource("CircleShape2D_b0bwb")

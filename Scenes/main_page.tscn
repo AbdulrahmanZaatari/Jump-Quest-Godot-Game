@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyvotfw3a47wo"]
+
+[ext_resource type="Texture2D" uid="uid://d0o7v16n3supj" path="res://Assets/mainMenu images/main.png" id="1_3s4bh"]
+[ext_resource type="Script" path="res://Scripts/main_page.gd" id="1_nf1lu"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="2_cv3bd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6asb6"]
+bg_color = Color(0, 0.619608, 0.301961, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqdmb"]
+bg_color = Color(0, 0.301961, 0.301961, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jubbn"]
+bg_color = Color(0, 0.301961, 0.301961, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="mainPage" type="Node2D"]
+script = ExtResource("1_nf1lu")
+
+[node name="Main" type="Sprite2D" parent="."]
+position = Vector2(578, 326)
+scale = Vector2(1.12891, 0.634766)
+texture = ExtResource("1_3s4bh")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 465.0
+offset_top = 482.0
+offset_right = 764.0
+offset_bottom = 587.0
+theme_override_fonts/font = ExtResource("2_cv3bd")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6asb6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mqdmb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jubbn")
+text = "Start Game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
