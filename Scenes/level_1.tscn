@@ -1,19 +1,18 @@
-[gd_scene load_steps=39 format=3 uid="uid://ca5yg6ocl2x4b"]
+[gd_scene load_steps=38 format=3 uid="uid://ca5yg6ocl2x4b"]
 
-[ext_resource type="PackedScene" uid="uid://b83vurwigomb0" path="res://Scenes/player.tscn" id="1_kvjl4"]
-[ext_resource type="Texture2D" uid="uid://dn1wwiey1wed7" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_ossku"]
-[ext_resource type="PackedScene" uid="uid://cy4gl8575v0qv" path="res://Scenes/platform.tscn" id="3_lgycw"]
-[ext_resource type="PackedScene" uid="uid://ch84llym3tf57" path="res://Scenes/coin.tscn" id="4_c3okt"]
-[ext_resource type="PackedScene" uid="uid://bla38ko3n1kbk" path="res://Scenes/killzone.tscn" id="5_hf4do"]
-[ext_resource type="PackedScene" uid="uid://crl2a3knheuma" path="res://Scenes/music.tscn" id="7_sit5u"]
-[ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="8_k8m0w"]
-[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="9_5kbaj"]
-[ext_resource type="PackedScene" uid="uid://cg0wnvd8s2j4r" path="res://Scenes/slime.tscn" id="9_7hasg"]
-[ext_resource type="PackedScene" uid="uid://b2ilxq60moh1t" path="res://Scenes/falling-platform.tscn" id="11_ilg58"]
-[ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="11_jmk0i"]
+[ext_resource type="Texture2D" uid="uid://dn1wwiey1wed7" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_nfuaa"]
+[ext_resource type="PackedScene" uid="uid://b83vurwigomb0" path="res://Scenes/player.tscn" id="2_jjf7a"]
+[ext_resource type="PackedScene" uid="uid://bla38ko3n1kbk" path="res://Scenes/killzone.tscn" id="3_64fwn"]
+[ext_resource type="PackedScene" uid="uid://ch84llym3tf57" path="res://Scenes/coin.tscn" id="4_s1obk"]
+[ext_resource type="PackedScene" uid="uid://cy4gl8575v0qv" path="res://Scenes/platform.tscn" id="5_it1lv"]
+[ext_resource type="PackedScene" uid="uid://crl2a3knheuma" path="res://Scenes/music.tscn" id="6_cxgvn"]
+[ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_ds88r"]
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="8_lpg53"]
+[ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="9_nmnof"]
+[ext_resource type="PackedScene" uid="uid://cg0wnvd8s2j4r" path="res://Scenes/slime.tscn" id="10_rbjpf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vvhwr"]
-texture = ExtResource("2_ossku")
+texture = ExtResource("1_nfuaa")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -726,7 +725,7 @@ _data = {
 "move": SubResource("Animation_qdoce")
 }
 
-[node name="Game" type="Node2D"]
+[node name="Level 1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_g1tif")
@@ -736,7 +735,7 @@ layer_0/tile_data = PackedInt32Array(327673, 0, 14, 327674, 0, 14, 327675, 0, 14
 layer_1/name = "Mid"
 layer_1/tile_data = PackedInt32Array(131071, 0, 0, 65536, 0, 0, 65540, 0, 0, 65541, 0, 0, 131076, 0, 1, 131077, 0, 1, 196613, 0, 1, 196612, 0, 1, 196608, 0, 1, 131072, 0, 1, 196607, 0, 1, 262143, 0, 1, 131081, 0, 0, 131082, 0, 0, 196617, 0, 1, 196618, 0, 1, 262154, 0, 1, 262153, 0, 1, 131078, 589824, 0, 131079, 655360, 0, 131080, 720896, 0, 65537, 589824, 0, 65538, 655360, 0, 65539, 720896, 0, 262142, 0, 0, 262141, 0, 0, 327677, 0, 1, 327678, 0, 1, 393214, 0, 1, 393213, 0, 1, -196604, 131072, 4, -65532, 196608, 7, 4, 196608, 8, 5, 65536, 6, 327676, 0, 0, 393212, 0, 1, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 262155, 0, 1, 262156, 0, 1, 262157, 0, 1, 262158, 0, 1, 262159, 0, 1, 262160, 0, 1, 262161, 0, 1, 262162, 0, 1, 196624, 0, 0, 196625, 0, 0, 196626, 0, 0, 131088, 458752, 6, -131056, 0, 0, -131055, 0, 0, 19, 0, 0, 20, 0, 0, 196639, 0, 0, 196638, 0, 0, 262174, 0, 1, 262175, 0, 1, 262176, 0, 1, 196640, 0, 0, 262177, 0, 1, 262178, 0, 1, 327710, 0, 1, 327711, 0, 1, 327712, 0, 1, 327713, 0, 1, 327714, 0, 1, 393250, 0, 1, 393249, 0, 1, 393248, 0, 1, 393247, 0, 1, 393246, 0, 1, 196641, 0, 0, 196642, 0, 0, 262179, 0, 0, 327716, 0, 0, 327717, 0, 0, 327718, 0, 0, 327715, 0, 1, 393251, 0, 1, 393252, 0, 1, 393253, 0, 1, 393254, 0, 1, 262180, 524288, 7, 393255, 0, 1, 393256, 0, 1, 393257, 0, 1, 393258, 0, 1, 393259, 0, 1, 327719, 0, 0, 327720, 0, 0, 327721, 0, 0, 327722, 0, 0, 327723, 0, 0, 393270, 458752, 0, 393271, 458752, 0, 393272, 458752, 0, 393273, 458752, 0, 393274, 458752, 0, 393275, 458752, 0, 458806, 524288, 0, 458807, 524288, 0, 458808, 524288, 0, 458809, 524288, 0, 458810, 524288, 0, 524346, 524288, 0, 458811, 524288, 0, 524347, 524288, 0, 524345, 524288, 0, 524344, 524288, 0, 524343, 524288, 0, 524342, 524288, 0, 589878, 524288, 0, 589879, 524288, 0, 589880, 524288, 0, 589881, 524288, 0, 589882, 524288, 0, 589883, 524288, 0, 131150, 0, 0, 131151, 0, 0, 131152, 0, 0, 131153, 0, 0, 131154, 0, 0, 131155, 0, 0, 131156, 0, 0, 131157, 0, 0, 196686, 65536, 0, 196687, 65536, 0, 196688, 65536, 0, 196689, 65536, 0, 196690, 65536, 0, 196691, 65536, 0, 196692, 65536, 0, 196693, 65536, 0, 65614, 65536, 7, 65621, 65536, 8, 65617, 0, 8, 65618, 0, 8, -262132, 0, 0, -262131, 0, 0, -262133, 0, 0, -262134, 0, 0, -196598, 0, 0, -196599, 0, 0, -131063, 0, 0, -131064, 0, 0, -65528, 0, 0, -65529, 0, 0, 458815, 458752, 0, 458817, 458752, 0, 458818, 458752, 0, 458819, 458752, 0, 458820, 458752, 0, 458816, 458752, 0, 393304, 0, 0, 524379, 0, 0, 524380, 0, 0, 458814, 458752, 0, 524359, 458752, 0, 196719, 0, 0, 196720, 0, 0, 196721, 0, 0, 327795, 0, 0, 458869, 0, 0, 655478, 0, 0, 655479, 0, 0, 655480, 0, 0, 655481, 0, 0, 655482, 0, 0, 655483, 0, 0, 655484, 0, 0, 589944, 0, 0, 655477, 0, 0, 589941, 0, 0, 393344, 0, 0, 393345, 0, 0, 393346, 0, 0, 393347, 0, 0, 393348, 0, 0, 393349, 0, 0, 393350, 0, 0, 393351, 0, 0, 393352, 0, 0, 393353, 0, 0, 393354, 0, 0, 393355, 0, 0, 393356, 0, 0, 393357, 0, 0, 393358, 0, 0, 393359, 0, 0, 393360, 0, 0, 393361, 0, 0, 393362, 0, 0, 393363, 0, 0, 393364, 0, 0, 393365, 0, 0, 393366, 0, 0, 393367, 0, 0, 393368, 0, 0, 327809, 0, 0, 327817, 0, 0, 327820, 0, 0, 327828, 0, 0, 65690, 0, 0, 196765, 0, 0, 327840, 0, 0, 458915, 0, 0, 589991, 0, 0, 458923, 0, 0, 327854, 0, 0, 458928, 0, 0, 458938, 0, 0, 458952, 0, 0, 262346, 0, 0, 65740, 0, 0, 65741, 0, 0, 65742, 0, 0, 65743, 0, 0, 65744, 0, 0, 65745, 0, 0, 65746, 0, 0, 65747, 0, 0, 65748, 0, 0, 65749, 0, 0, 65750, 0, 0, -130868, 393216, 3, -65332, 393216, 4, 204, 393216, 5, -130858, 393216, 3, -65322, 393216, 4, 214, 393216, 5, 205, 65536, 7, 213, 65536, 7)
 
-[node name="player" parent="." instance=ExtResource("1_kvjl4")]
+[node name="player" parent="." instance=ExtResource("2_jjf7a")]
 position = Vector2(2, 4)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -745,7 +744,7 @@ zoom = Vector2(4, 4)
 limit_bottom = 170
 position_smoothing_enabled = true
 
-[node name="Killzone" parent="." instance=ExtResource("5_hf4do")]
+[node name="Killzone" parent="." instance=ExtResource("3_64fwn")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(1, 198)
@@ -753,51 +752,51 @@ shape = SubResource("WorldBoundaryShape2D_wpng1")
 
 [node name="Coins" type="Node" parent="."]
 
-[node name="coin" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(136, 23)
 
-[node name="coin2" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin2" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(313, -5)
 
-[node name="coin3" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin3" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(488, 41)
 
-[node name="coin4" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin4" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(-57, 59)
 
-[node name="coin5" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin5" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(871, 91)
 
-[node name="coin6" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin6" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(1288, 27)
 
-[node name="coin7" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin7" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(1336, 27)
 
-[node name="coin8" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin8" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(1463, 122)
 
-[node name="coin9" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin9" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(2791, 75)
 
-[node name="coin10" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin10" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(2472, 12)
 
-[node name="coin11" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin11" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(3303, 10)
 
-[node name="coin12" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin12" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(3320, 10)
 
-[node name="coin13" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin13" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(3401, 11)
 
-[node name="coin14" parent="Coins" instance=ExtResource("4_c3okt")]
+[node name="coin14" parent="Coins" instance=ExtResource("4_s1obk")]
 position = Vector2(3386, 11)
 
 [node name="Platforms" type="Node" parent="."]
 
-[node name="platform" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(320, 59)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform"]
@@ -806,7 +805,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platform3" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform3" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(720, 91)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform3"]
@@ -815,7 +814,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platform4" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform4" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(1172, 143)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform4"]
@@ -824,7 +823,7 @@ libraries = {
 }
 autoplay = "moveUp"
 
-[node name="platform5" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform5" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(1510, 168)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform5"]
@@ -833,7 +832,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platform6" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform6" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(1660, 202)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform6"]
@@ -842,7 +841,7 @@ libraries = {
 }
 autoplay = "move up"
 
-[node name="platform7" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform7" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(1705, 110)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform7"]
@@ -851,7 +850,7 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="platform2" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform2" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(2907, 114)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform2"]
@@ -860,17 +859,16 @@ libraries = {
 }
 autoplay = "Move"
 
-[node name="platform8" parent="Platforms" instance=ExtResource("3_lgycw")]
+[node name="platform8" parent="Platforms" instance=ExtResource("5_it1lv")]
 position = Vector2(3098, 105)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/platform8"]
-root_node = NodePath("../../platform8")
 libraries = {
 "": SubResource("AnimationLibrary_d0tav")
 }
 autoplay = "move"
 
-[node name="Music" parent="." instance=ExtResource("7_sit5u")]
+[node name="Music" parent="." instance=ExtResource("6_cxgvn")]
 
 [node name="Labels" type="Node" parent="."]
 
@@ -880,7 +878,7 @@ offset_top = -16.0
 offset_right = 1939.0
 offset_bottom = 7.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("8_k8m0w")
+theme_override_fonts/font = ExtResource("7_ds88r")
 theme_override_font_sizes/font_size = 8
 text = "It's an enemy!"
 metadata/_edit_use_anchors_ = true
@@ -890,7 +888,7 @@ offset_left = 297.0
 offset_top = -52.0
 offset_right = 337.0
 offset_bottom = -29.0
-theme_override_fonts/font = ExtResource("8_k8m0w")
+theme_override_fonts/font = ExtResource("7_ds88r")
 theme_override_font_sizes/font_size = 8
 text = "You collected X coins"
 metadata/_edit_use_anchors_ = true
@@ -901,74 +899,71 @@ offset_top = -62.0
 offset_right = 3408.0
 offset_bottom = -39.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("8_k8m0w")
+theme_override_fonts/font = ExtResource("7_ds88r")
 theme_override_font_sizes/font_size = 16
 text = "The end!"
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("9_5kbaj")
+script = ExtResource("8_lpg53")
 
 [node name="Trampolines" type="Node" parent="."]
 
-[node name="Trampoline" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(-126, -138)
 
-[node name="Trampoline2" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline2" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(1633, -27)
 
-[node name="Trampoline3" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline3" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2074, -91)
 
-[node name="Trampoline4" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline4" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2258, -74)
 
-[node name="Trampoline5" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline5" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2322, -43)
 
-[node name="Trampoline6" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline6" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2387, -75)
 
-[node name="Trampoline7" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline7" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2466, -75)
 
-[node name="Trampoline8" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline8" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(1866, -91)
 
-[node name="Trampoline9" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline9" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(1698, -91)
 
-[node name="Trampoline10" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline10" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2626, -74)
 
-[node name="Trampoline11" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline11" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2850, -75)
 
-[node name="Trampoline12" parent="Trampolines" instance=ExtResource("11_jmk0i")]
+[node name="Trampoline12" parent="Trampolines" instance=ExtResource("9_nmnof")]
 position = Vector2(2882, -122)
 
 [node name="Slimes" type="Node" parent="."]
 
-[node name="slime2" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime2" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(2090, 83)
 
-[node name="slime3" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime3" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(2120, 84)
 
-[node name="slime4" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime4" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(2152, 84)
 
-[node name="slime5" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime5" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(2279, 83)
 
-[node name="slime6" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime6" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(2312, 82)
 
-[node name="slime7" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime7" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(2346, 83)
 
-[node name="slime" parent="Slimes" instance=ExtResource("9_7hasg")]
+[node name="slime" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(1900, 147)
-
-[node name="falling-platform" parent="." instance=ExtResource("11_ilg58")]
-position = Vector2(370, 34)

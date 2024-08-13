@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723557208
+::res://::1723557582
 default_bus_layout.tres::AudioBusLayout::451099110672992805::1723556096::0::1::::<><>::
 gomarice_game_continue_02.ttf::FontFile::6851873984316344859::1723556096::1723556096::1::::<><>::
 icon.svg::CompressedTexture2D::615853378179393560::1723556096::1723556325::1::::<><>::
@@ -1600,19 +1600,20 @@ player-run-3.png::CompressedTexture2D::4538745221087061154::1723556095::17235560
 player-run-4.png::CompressedTexture2D::8400851959394824058::1723556095::1723556095::1::::<><>::
 player-run-5.png::CompressedTexture2D::6705515561950982467::1723556095::1723556095::1::::<><>::
 player-run-6.png::CompressedTexture2D::6250568477044389429::1723556095::1723556095::1::::<><>::
-::res://Scenes/::1723557155
+::res://Scenes/::1723557277
 coin.tscn::PackedScene::5334068790675136392::1723556096::0::1::::<><>::uid://dw22oecq3o2jn::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/coin.png<>res://Scripts/coin.gd<>uid://mrcvaixlrmh3::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sounds/coin.wav
-falling-platform.tscn::PackedScene::4298744333547717427::1723557155::0::1::::<><>::res://Scripts/falling-platform.gd<>uid://chmfvsfux03ty::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png
-game.tscn::PackedScene::4836242272555595519::1723557138::0::1::::<><>::uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://dn1wwiey1wed7::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://crl2a3knheuma::::res://Scenes/music.tscn<>uid://cremwkwskmqj6::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>res://Scripts/game_manager.gd<>uid://cg0wnvd8s2j4r::::res://Scenes/slime.tscn<>uid://b2ilxq60moh1t::::res://Scenes/falling-platform.tscn<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn
-killzone.tscn::PackedScene::3160257518859140852::1723557138::0::1::::<><>::res://Scripts/killzone.gd
-level_menu.tscn::PackedScene::8208609373671078047::1723557138::0::1::::<><>::res://Scripts/level_menu.gd<>uid://bjtgcktgjqi57::::res://Assets/mainMenu images/level.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
-main_page.tscn::PackedScene::8888030497086076514::1723557138::0::1::::<><>::uid://d0o7v16n3supj::::res://Assets/mainMenu images/main.png<>res://Scripts/main_page.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
+falling-platform.tscn::PackedScene::4298744333547717427::1723557277::0::1::::<><>::res://Scripts/falling-platform.gd<>uid://chmfvsfux03ty::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png
+game.tscn::PackedScene::4836242272555595519::1723558654::0::1::::<><>::uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://dn1wwiey1wed7::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/world_tileset.png<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://crl2a3knheuma::::res://Scenes/music.tscn<>uid://cremwkwskmqj6::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>res://Scripts/game_manager.gd<>uid://cg0wnvd8s2j4r::::res://Scenes/slime.tscn<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn
+killzone.tscn::PackedScene::3160257518859140852::1723557241::0::1::::<><>::res://Scripts/killzone.gd
+level_menu.tscn::PackedScene::8208609373671078047::1723557241::0::1::::<><>::res://Scripts/level_menu.gd<>uid://bjtgcktgjqi57::::res://Assets/mainMenu images/level.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
+main_page.tscn::PackedScene::8888030497086076514::1723557241::0::1::::<><>::uid://d0o7v16n3supj::::res://Assets/mainMenu images/main.png<>res://Scripts/main_page.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
 music.tscn::PackedScene::5990400710034148504::1723556096::0::1::::<><>::uid://0gf3t0j2bg8v::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/music/time_for_adventure.mp3
 platform.tscn::PackedScene::6517626296365831201::1723556096::0::1::::<><>::uid://chmfvsfux03ty::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png
-player.tscn::PackedScene::4761766800842752315::1723557138::0::1::::<><>::res://Scripts/player.gd<>uid://bhnmms6ge3not::::res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png
-scene1.tscn::PackedScene::6364744884248152023::1723557138::0::1::::<><>::res://Scripts/scene1.gd<>uid://dlgwuq7wq5il::::res://Assets/mainMenu images/1.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
-scene_2.tscn::PackedScene::3481938710343784706::1723557138::0::1::::<><>::uid://c20yifp54kdwu::::res://Assets/mainMenu images/2.png<>res://Scripts/scene_2.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
-scene_3.tscn::PackedScene::534977084805659899::1723557138::0::1::::<><>::uid://dre2fi8vp5v4u::::res://Assets/mainMenu images/3.png<>res://Scripts/scene_3.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
+player.tscn::PackedScene::4761766800842752315::1723557241::0::1::::<><>::res://Scripts/player.gd<>uid://bhnmms6ge3not::::res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png
+level_2.tscn::PackedScene::7789938502143413356::1723558644::0::1::::<><>::
+scene1.tscn::PackedScene::6364744884248152023::1723557241::0::1::::<><>::res://Scripts/scene1.gd<>uid://dlgwuq7wq5il::::res://Assets/mainMenu images/1.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
+scene_2.tscn::PackedScene::3481938710343784706::1723557241::0::1::::<><>::uid://c20yifp54kdwu::::res://Assets/mainMenu images/2.png<>res://Scripts/scene_2.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
+scene_3.tscn::PackedScene::534977084805659899::1723557241::0::1::::<><>::uid://dre2fi8vp5v4u::::res://Assets/mainMenu images/3.png<>res://Scripts/scene_3.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
 slime.tscn::PackedScene::5246943971376778599::1723556096::0::1::::<><>::uid://d2o855vwjig26::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png<>res://Scripts/slime.gd<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn
 TerrainDetector.tscn::PackedScene::8605021641750086546::1723556096::0::1::::<><>::
 Trampoline.tscn::PackedScene::190995997132916727::1723556096::0::1::::<><>::uid://bmgpnn4fa4kid::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/trampolines.png<>res://Scripts/Trampoline.gd
@@ -3181,9 +3182,9 @@ player-run-3.png::CompressedTexture2D::7740627633777905465::1723556096::17235560
 player-run-4.png::CompressedTexture2D::2833018521811611295::1723556096::1723556096::1::::<><>::
 player-run-5.png::CompressedTexture2D::7640674738063215211::1723556096::1723556096::1::::<><>::
 player-run-6.png::CompressedTexture2D::7068823560591798169::1723556096::1723556096::1::::<><>::
-::res://Scripts/::1723556864
+::res://Scripts/::1723557236
 coin.gd::GDScript::-1::1723556096::0::1::::<>Area2D<>::
-falling-platform.gd::GDScript::-1::1723556864::0::1::::<>RigidBody2D<>::
+falling-platform.gd::GDScript::-1::1723557236::0::1::::<>RigidBody2D<>::
 game_manager.gd::GDScript::-1::1723556096::0::1::::<>Node<>::
 killzone.gd::GDScript::-1::1723556096::0::1::::<>Area2D<>::
 level_menu.gd::GDScript::-1::1723556096::0::1::::<>Node2D<>::
