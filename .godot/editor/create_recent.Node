@@ -1,9 +1,10 @@
-Sprite2D
-TileMap
 Node
 Timer
+AnimatedSprite2D
 CollisionShape2D
 Area2D
+Sprite2D
+TileMap
 AnimationPlayer
 Camera2D
 RigidBody2D

@@ -12,6 +12,21 @@
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8r8yt"]
 distance = -497.0
 
+[sub_resource type="Animation" id="Animation_flcxc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(571, 452)]
+}
+
 [sub_resource type="Animation" id="Animation_8g5bm"]
 resource_name = "move"
 length = 1.25
@@ -27,21 +42,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(571, 452), Vector2(653, 386)]
-}
-
-[sub_resource type="Animation" id="Animation_flcxc"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(571, 452)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jsekv"]
@@ -155,14 +155,16 @@ position = Vector2(1124, 491)
 [node name="spike2" parent="spikes" instance=ExtResource("7_ysk4v")]
 position = Vector2(1091, 491)
 
-[node name="coin" parent="." instance=ExtResource("3_e1huh")]
+[node name="coin5" type="Node" parent="."]
+
+[node name="coin" parent="coin5" instance=ExtResource("3_e1huh")]
 position = Vector2(1527, 316)
 
-[node name="coin2" parent="." instance=ExtResource("3_e1huh")]
-position = Vector2(1544, 316)
-
-[node name="coin3" parent="." instance=ExtResource("3_e1huh")]
+[node name="coin3" parent="coin5" instance=ExtResource("3_e1huh")]
 position = Vector2(1560, 316)
 
-[node name="coin4" parent="." instance=ExtResource("3_e1huh")]
+[node name="coin4" parent="coin5" instance=ExtResource("3_e1huh")]
 position = Vector2(517, 341)
+
+[node name="coin2" parent="coin5" instance=ExtResource("3_e1huh")]
+position = Vector2(1544, 316)
