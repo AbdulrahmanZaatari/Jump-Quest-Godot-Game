@@ -53,29 +53,29 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_e3lh8")
 
 [node name="box1" type="Sprite2D" parent="."]
-position = Vector2(589.75, 318.75)
-scale = Vector2(0.60651, 0.598611)
+position = Vector2(966.25, 496.75)
+scale = Vector2(0.998698, 0.928241)
 texture = ExtResource("2_w5yk6")
 
 [node name="Next1" type="Button" parent="."]
-offset_left = 1016.0
-offset_top = 556.0
-offset_right = 1150.0
-offset_bottom = 614.0
+offset_left = 1653.0
+offset_top = 885.0
+offset_right = 1866.0
+offset_bottom = 970.0
 theme_override_fonts/font = ExtResource("3_c1vl1")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_b5kn4")
 theme_override_styles/hover = SubResource("StyleBoxFlat_w08o7")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7pqqk")
 text = "Next"
 
 [node name="Back1" type="Button" parent="."]
-offset_left = 37.0
-offset_top = 570.0
-offset_right = 174.0
-offset_bottom = 627.0
+offset_left = 52.0
+offset_top = 886.0
+offset_right = 258.0
+offset_bottom = 969.0
 theme_override_fonts/font = ExtResource("3_c1vl1")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_4wuok")
 theme_override_styles/hover = SubResource("StyleBoxFlat_v3kuo")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_61ram")
