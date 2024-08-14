@@ -5,4 +5,4 @@ res://Scenes/level_2.tscn
 res://Scenes/spike.tscn
 res://Scenes/coin.tscn
 res://Scenes/poison-mushroom.tscn
-res://Scripts/poison-mushroom.gd
+res://Scenes/main_page.tscn
