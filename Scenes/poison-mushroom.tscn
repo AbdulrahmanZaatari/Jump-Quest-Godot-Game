@@ -94,15 +94,16 @@ collision_mask = 2
 script = ExtResource("1_3pdx7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(29, -8)
+position = Vector2(31, -10)
 shape = SubResource("CircleShape2D_lrpxr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(21, -15)
+position = Vector2(38, -18)
 scale = Vector2(0.730159, 0.824324)
 sprite_frames = SubResource("SpriteFrames_1yrky")
 animation = &"poison"
-frame_progress = 0.442208
+frame_progress = 0.172468
+flip_h = true
 
 [node name="Timer" type="Timer" parent="."]
 
