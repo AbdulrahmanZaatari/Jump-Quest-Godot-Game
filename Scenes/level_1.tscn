@@ -1,5 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://ca5yg6ocl2x4b"]
+[gd_scene load_steps=41 format=3 uid="uid://ca5yg6ocl2x4b"]
 
+[ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_o6psf"]
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_tk5iu"]
 [ext_resource type="PackedScene" uid="uid://b83vurwigomb0" path="res://Scenes/player.tscn" id="2_jjf7a"]
 [ext_resource type="PackedScene" uid="uid://bla38ko3n1kbk" path="res://Scenes/killzone.tscn" id="3_64fwn"]
@@ -10,6 +11,7 @@
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="8_lpg53"]
 [ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="9_nmnof"]
 [ext_resource type="PackedScene" uid="uid://cg0wnvd8s2j4r" path="res://Scenes/slime.tscn" id="10_rbjpf"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="11_hbq23"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wpng1"]
 distance = -2.0
@@ -316,7 +318,29 @@ _data = {
 "move": SubResource("Animation_qdoce")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwetg"]
+bg_color = Color(0.133005, 0.426857, 0.697169, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no1q4"]
+bg_color = Color(0.0285919, 0.123784, 0.378974, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bxft"]
+bg_color = Color(0.027451, 0.12549, 0.380392, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [node name="Level 1" type="Node2D"]
+script = ExtResource("1_o6psf")
 
 [node name="TileMap" parent="." instance=ExtResource("1_tk5iu")]
 
@@ -552,3 +576,20 @@ position = Vector2(2346, 83)
 
 [node name="slime" parent="Slimes" instance=ExtResource("10_rbjpf")]
 position = Vector2(1900, 147)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 9.0
+offset_top = 65.0
+offset_right = 105.0
+offset_bottom = 111.0
+theme_override_fonts/font = ExtResource("11_hbq23")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_cwetg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_no1q4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxft")
+text = "Back"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

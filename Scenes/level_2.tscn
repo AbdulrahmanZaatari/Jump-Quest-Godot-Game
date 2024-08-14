@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://di8rfcise0t37"]
+[gd_scene load_steps=22 format=3 uid="uid://di8rfcise0t37"]
 
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_qg5ol"]
+[ext_resource type="Script" path="res://Scripts/level_2.gd" id="1_rnp8n"]
 [ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="2_tltci"]
 [ext_resource type="PackedScene" uid="uid://b2ilxq60moh1t" path="res://Scenes/falling-platform.tscn" id="3_0s7yv"]
 [ext_resource type="PackedScene" uid="uid://ch84llym3tf57" path="res://Scenes/coin.tscn" id="3_e1huh"]
@@ -9,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cy4gl8575v0qv" path="res://Scenes/platform.tscn" id="6_pllbn"]
 [ext_resource type="PackedScene" uid="uid://c4nbfn5adqxs2" path="res://Scenes/spike.tscn" id="7_ysk4v"]
 [ext_resource type="PackedScene" uid="uid://cfx0kq7prqarb" path="res://Scenes/poison-mushroom.tscn" id="9_7ykei"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="10_c7r01"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8r8yt"]
 distance = -497.0
@@ -88,7 +90,29 @@ _data = {
 "move": SubResource("Animation_8tq5e")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8rsa1"]
+bg_color = Color(0.133333, 0.427451, 0.698039, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6upp"]
+bg_color = Color(0.027451, 0.12549, 0.380392, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvg3h"]
+bg_color = Color(0.027451, 0.12549, 0.380392, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [node name="Level 2" type="Node2D"]
+script = ExtResource("1_rnp8n")
 
 [node name="TileMap" parent="." instance=ExtResource("1_qg5ol")]
 position = Vector2(111, 208)
@@ -263,3 +287,20 @@ position = Vector2(1736, 243)
 
 [node name="poison-mushroom2" parent="mushrooms" instance=ExtResource("9_7ykei")]
 position = Vector2(1832, 243)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Back" type="Button" parent="CanvasLayer"]
+offset_left = 29.0
+offset_top = 47.0
+offset_right = 168.0
+offset_bottom = 106.0
+theme_override_fonts/font = ExtResource("10_c7r01")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_8rsa1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l6upp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cvg3h")
+text = "Back
+"
+
+[connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_back_pressed"]
