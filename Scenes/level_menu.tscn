@@ -99,63 +99,63 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_jcs2g")
 
 [node name="Level" type="Sprite2D" parent="."]
-position = Vector2(579.5, 320.5)
-scale = Vector2(1.12793, 0.62793)
+position = Vector2(965, 495.5)
+scale = Vector2(1.88086, 0.969727)
 texture = ExtResource("1_vit5l")
 
 [node name="Level1" type="Button" parent="."]
-offset_left = 58.0
-offset_top = 125.0
-offset_right = 268.0
-offset_bottom = 194.0
+offset_left = 69.0
+offset_top = 166.0
+offset_right = 373.0
+offset_bottom = 282.0
 theme_override_fonts/font = ExtResource("2_o6aet")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_lukmm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_16s44")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2xtk5")
 text = "Level 1"
 
 [node name="Level2" type="Button" parent="."]
-offset_left = 56.0
-offset_top = 245.0
-offset_right = 273.0
-offset_bottom = 317.0
+offset_left = 67.0
+offset_top = 361.0
+offset_right = 388.0
+offset_bottom = 469.0
 theme_override_fonts/font = ExtResource("2_o6aet")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_xkomv")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3njaw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ofns1")
 text = "Level 2"
 
 [node name="Level3" type="Button" parent="."]
-offset_left = 54.0
-offset_top = 357.0
-offset_right = 272.0
-offset_bottom = 426.0
+offset_left = 71.0
+offset_top = 558.0
+offset_right = 387.0
+offset_bottom = 664.0
 theme_override_fonts/font = ExtResource("2_o6aet")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_m62pf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7iabl")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_iytyf")
 text = "Level3"
 
 [node name="Level4" type="Button" parent="."]
-offset_left = 56.0
-offset_top = 467.0
-offset_right = 272.0
-offset_bottom = 538.0
+offset_left = 69.0
+offset_top = 749.0
+offset_right = 408.0
+offset_bottom = 861.0
 theme_override_fonts/font = ExtResource("2_o6aet")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_opyis")
 text = "Level 4"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 974.0
-offset_top = 545.0
-offset_right = 1131.0
-offset_bottom = 609.0
+offset_left = 1681.0
+offset_top = 875.0
+offset_right = 1917.0
+offset_bottom = 984.0
 theme_override_fonts/font = ExtResource("2_o6aet")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_y60td")
 theme_override_styles/hover = SubResource("StyleBoxFlat_je7dj")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_4st87")
