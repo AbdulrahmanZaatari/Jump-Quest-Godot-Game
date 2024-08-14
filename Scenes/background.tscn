@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1jgdb8xfdysc"]
+
+[ext_resource type="Texture2D" uid="uid://bcoy2gn1xxia6" path="res://Assets/Sunny Land Collection Files/Assets/Environments/Treasure Hoard/Preview.png" id="1_qrxo4"]
+
+[node name="background" type="Node2D"]
+
+[node name="Preview" type="Sprite2D" parent="."]
+position = Vector2(1.00012, -1.99997)
+scale = Vector2(2.67361, 2.68333)
+texture = ExtResource("1_qrxo4")
+centered = false

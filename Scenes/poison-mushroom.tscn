@@ -1,0 +1,111 @@
+[gd_scene load_steps=15 format=3 uid="uid://cfx0kq7prqarb"]
+
+[ext_resource type="Script" path="res://Scripts/poison-mushroom.gd" id="1_3pdx7"]
+[ext_resource type="Texture2D" uid="uid://c2fhehxumvym5" path="res://Assets/Sunny Land Collection Files/Assets/Characters/sunny-mushroom/spritesheets/sunny-mushroom-breath.png" id="1_5uf4u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lrpxr"]
+radius = 8.06226
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxx4t"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(0, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kthyr"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(63, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fr4hg"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(126, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yfrbm"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(189, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cbyr"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(252, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84lnh"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(315, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lgwp"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(378, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a05ci"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(441, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpvdt"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(504, 0, 63, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ya3s"]
+atlas = ExtResource("1_5uf4u")
+region = Rect2(567, 0, 63, 37)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1yrky"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxx4t")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kthyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fr4hg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yfrbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3cbyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84lnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lgwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a05ci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpvdt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ya3s")
+}],
+"loop": true,
+"name": &"poison",
+"speed": 8.0
+}]
+
+[node name="poison-mushroom" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_3pdx7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(31, -10)
+shape = SubResource("CircleShape2D_lrpxr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(38, -18)
+scale = Vector2(0.730159, 0.824324)
+sprite_frames = SubResource("SpriteFrames_1yrky")
+animation = &"poison"
+frame_progress = 0.172468
+flip_h = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

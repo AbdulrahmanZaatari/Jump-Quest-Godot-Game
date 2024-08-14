@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b83vurwigomb0"]
+[gd_scene load_steps=17 format=3 uid="uid://b83vurwigomb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_eg7kd"]
 [ext_resource type="Texture2D" uid="uid://bhnmms6ge3not" path="res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png" id="2_uck8q"]
@@ -11,13 +11,21 @@ region = Rect2(0, 128, 33, 32)
 atlas = ExtResource("2_uck8q")
 region = Rect2(33, 128, 33, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wkgl4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jap5h"]
 atlas = ExtResource("2_uck8q")
-region = Rect2(33, 96, 33, 32)
+region = Rect2(0, 96, 33, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ffog5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_byr16"]
 atlas = ExtResource("2_uck8q")
-region = Rect2(66, 96, 33, 32)
+region = Rect2(33, 0, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtf47"]
+atlas = ExtResource("2_uck8q")
+region = Rect2(66, 0, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tf8p"]
+atlas = ExtResource("2_uck8q")
+region = Rect2(99, 0, 33, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uuh3v"]
 atlas = ExtResource("2_uck8q")
@@ -58,10 +66,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wkgl4")
+"texture": SubResource("AtlasTexture_jap5h")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ffog5")
+"texture": SubResource("AtlasTexture_byr16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtf47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tf8p")
 }],
 "loop": true,
 "name": &"idle",
@@ -97,12 +111,14 @@ radius = 8.06226
 [node name="player" type="CharacterBody2D"]
 z_index = 5
 collision_layer = 2
+collision_mask = 255
 script = ExtResource("1_eg7kd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_kb4ba")
 animation = &"idle"
+frame_progress = 0.359565
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -8)

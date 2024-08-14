@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4nbfn5adqxs2"]
+
+[ext_resource type="Script" path="res://Scripts/spike.gd" id="1_kk31g"]
+[ext_resource type="Texture2D" uid="uid://u1asc1kt5wdm" path="res://Assets/spikes-removebg-preview.png" id="1_wgxxc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0g07n"]
+radius = 5.38516
+
+[node name="spike" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_kk31g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(82, -1)
+shape = SubResource("CircleShape2D_0g07n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(82.5, -1.15466)
+scale = Vector2(0.188406, 0.185566)
+texture = ExtResource("1_wgxxc")
+region_enabled = true
+region_rect = Rect2(106.007, 31.1667, 69.4237, 63.4389)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
