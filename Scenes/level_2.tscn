@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://di8rfcise0t37"]
+[gd_scene load_steps=33 format=3 uid="uid://di8rfcise0t37"]
 
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_qg5ol"]
 [ext_resource type="Script" path="res://Scripts/level_2.gd" id="1_rnp8n"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cfx0kq7prqarb" path="res://Scenes/poison-mushroom.tscn" id="9_7ykei"]
 [ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="10_c7r01"]
 [ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="12_tviyk"]
+[ext_resource type="AudioStream" uid="uid://dkxwk1nq5lxuf" path="res://Assets/Music/pixify-230092.mp3" id="13_tndbv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8r8yt"]
 distance = -497.0
@@ -91,6 +92,21 @@ _data = {
 "move": SubResource("Animation_8tq5e")
 }
 
+[sub_resource type="Animation" id="Animation_wacln"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3174, 345)]
+}
+
 [sub_resource type="Animation" id="Animation_c7hlq"]
 resource_name = "move"
 loop_mode = 2
@@ -107,7 +123,13 @@ tracks/0/keys = {
 "values": [Vector2(3174, 345), Vector2(3234, 301)]
 }
 
-[sub_resource type="Animation" id="Animation_wacln"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ljpqv"]
+_data = {
+"RESET": SubResource("Animation_wacln"),
+"move": SubResource("Animation_c7hlq")
+}
+
+[sub_resource type="Animation" id="Animation_shlqo"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -119,13 +141,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(3174, 345)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ljpqv"]
-_data = {
-"RESET": SubResource("Animation_wacln"),
-"move": SubResource("Animation_c7hlq")
+"values": [Vector2(3282, 327)]
 }
 
 [sub_resource type="Animation" id="Animation_lhvwf"]
@@ -145,7 +161,13 @@ tracks/0/keys = {
 "values": [Vector2(3282, 327), Vector2(3354, 257)]
 }
 
-[sub_resource type="Animation" id="Animation_shlqo"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gk408"]
+_data = {
+"RESET": SubResource("Animation_shlqo"),
+"move": SubResource("Animation_lhvwf")
+}
+
+[sub_resource type="Animation" id="Animation_s0ny0"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -157,13 +179,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(3282, 327)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_gk408"]
-_data = {
-"RESET": SubResource("Animation_shlqo"),
-"move": SubResource("Animation_lhvwf")
+"values": [Vector2(3695, 242)]
 }
 
 [sub_resource type="Animation" id="Animation_56icr"]
@@ -180,21 +196,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(3695, 242), Vector2(3740, 242)]
-}
-
-[sub_resource type="Animation" id="Animation_s0ny0"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(3695, 242)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sud1h"]
@@ -250,7 +251,7 @@ position = Vector2(725, 423)
 position = Vector2(760, 444)
 
 [node name="falling-platform7" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
-position = Vector2(796, 466)
+position = Vector2(-28, 269)
 
 [node name="falling-platform2" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
 position = Vector2(900, 391)
@@ -372,9 +373,10 @@ position = Vector2(3441, 85)
 position = Vector2(3521, 22)
 
 [node name="player" parent="." instance=ExtResource("4_rl8my")]
-position = Vector2(18, 279)
+position = Vector2(276, 314)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-2, -5)
 zoom = Vector2(4, 4)
 
 [node name="Killzone" parent="." instance=ExtResource("5_wwb7h")]
@@ -554,5 +556,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("12_tviyk")
 theme_override_font_sizes/font_size = 16
 text = "The End!"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_tndbv")
 
 [connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_back_pressed"]

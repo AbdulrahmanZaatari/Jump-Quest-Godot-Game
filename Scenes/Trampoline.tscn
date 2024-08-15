@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyrw8wdr5vnj"]
+[gd_scene load_steps=5 format=3 uid="uid://cyrw8wdr5vnj"]
 
 [ext_resource type="Texture2D" uid="uid://bmgpnn4fa4kid" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/trampolines.png" id="1_7dsgd"]
 [ext_resource type="Script" path="res://Scripts/Trampoline.gd" id="1_scjts"]
+[ext_resource type="AudioStream" uid="uid://cbry1jcs3djhh" path="res://Assets/Music/trampoline.wav" id="3_i7c5o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b0bwb"]
 radius = 6.40312
@@ -21,3 +22,7 @@ region_rect = Rect2(0, 0, 17.737, 16)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(358, 180)
 shape = SubResource("CircleShape2D_b0bwb")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_i7c5o")
+volume_db = 24.0
