@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://ca5yg6ocl2x4b"]
+[gd_scene load_steps=40 format=3 uid="uid://ca5yg6ocl2x4b"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_o6psf"]
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_tk5iu"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://bla38ko3n1kbk" path="res://Scenes/killzone.tscn" id="3_64fwn"]
 [ext_resource type="PackedScene" uid="uid://ch84llym3tf57" path="res://Scenes/coin.tscn" id="4_s1obk"]
 [ext_resource type="PackedScene" uid="uid://cy4gl8575v0qv" path="res://Scenes/platform.tscn" id="5_it1lv"]
-[ext_resource type="PackedScene" uid="uid://crl2a3knheuma" path="res://Scenes/music.tscn" id="6_cxgvn"]
 [ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_ds88r"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="8_lpg53"]
 [ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="9_nmnof"]
@@ -477,8 +476,6 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="Music" parent="." instance=ExtResource("6_cxgvn")]
-
 [node name="Labels" type="Node" parent="."]
 
 [node name="Warning" type="Label" parent="Labels"]
@@ -591,5 +588,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_cwetg")
 theme_override_styles/hover = SubResource("StyleBoxFlat_no1q4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxft")
 text = "Back"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -6.0
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

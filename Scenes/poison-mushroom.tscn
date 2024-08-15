@@ -1,7 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://cfx0kq7prqarb"]
+[gd_scene load_steps=17 format=3 uid="uid://cfx0kq7prqarb"]
 
 [ext_resource type="Script" path="res://Scripts/poison-mushroom.gd" id="1_3pdx7"]
 [ext_resource type="Texture2D" uid="uid://c2fhehxumvym5" path="res://Assets/Sunny Land Collection Files/Assets/Characters/sunny-mushroom/spritesheets/sunny-mushroom-breath.png" id="1_5uf4u"]
+[ext_resource type="AudioStream" uid="uid://d21x70lw6wqqh" path="res://Assets/Music/death.mp3" id="3_knkng"]
+[ext_resource type="AudioStream" uid="uid://bupdhq38sales" path="res://Assets/Music/mashroom.wav" id="4_eexiu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lrpxr"]
 radius = 8.06226
@@ -106,6 +108,16 @@ frame_progress = 0.172468
 flip_h = true
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_knkng")
+
+[node name="mashroom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_eexiu")
+volume_db = 10.0
+autoplay = true
+max_distance = 100.0
+attenuation = 8.57417
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

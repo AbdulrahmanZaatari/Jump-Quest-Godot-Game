@@ -3,6 +3,8 @@ extends Area2D
 @onready var poison_collision_shape = $CollisionShape2D  # Reference to the collision shape
 @onready var animated_sprite = $AnimatedSprite2D         # Reference to the AnimatedSprite2D
 @onready var timer = $Timer                              # Reference to the Timer node
+@onready var sound_death=$death
+@onready var sound_mashroom=$mashroom
 
 @export var poison_interval = 2.25  # Time in seconds for how long the poison animation should play
 @export var idle_interval = 2.0    # Time in seconds for how long the idle animation should play
@@ -34,6 +36,7 @@ func play_idle():
 func play_poison():
 	print("Playing poison animation")
 	animated_sprite.play("poison")
+	sound_mashroom.play()
 	timer_count = 0.0
 	poison_collision_shape.disabled = false  # Enable the collision shape
 	
@@ -47,6 +50,7 @@ func _on_body_entered(body):
 	print("Body entered the mushroom area")
 	if body is CharacterBody2D and not poison_collision_shape.disabled:
 		print("Player is in poison area - dying")
+		sound_death.play()
 		body.die()  # Call the player's death function
 		# Slow down time and remove the collision shape
 		Engine.time_scale = 0.5
