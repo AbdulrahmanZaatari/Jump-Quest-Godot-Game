@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bla38ko3n1kbk"]
+[gd_scene load_steps=3 format=3 uid="uid://bla38ko3n1kbk"]
 
 [ext_resource type="Script" path="res://Scripts/killzone.gd" id="1_wic8s"]
+[ext_resource type="AudioStream" uid="uid://d21x70lw6wqqh" path="res://Assets/Music/death.mp3" id="2_amart"]
 
 [node name="Killzone" type="Area2D"]
 collision_mask = 2
@@ -9,6 +10,9 @@ script = ExtResource("1_wic8s")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.6
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_amart")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
