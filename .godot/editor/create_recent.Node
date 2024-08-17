@@ -1,3 +1,9 @@
+CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
+RigidBody2D
+Camera2D
 AudioStreamPlayer2D
 AudioStreamPlayer
 Timer
@@ -5,9 +11,4 @@ Label
 AnimationPlayer
 Node
 AnimatedSprite2D
-CollisionShape2D
-Area2D
-Sprite2D
 TileMap
-Camera2D
-RigidBody2D

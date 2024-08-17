@@ -28,13 +28,11 @@ func _process(delta):
 		play_idle()
 
 func play_idle():
-	print("Playing idle animation")
 	animated_sprite.play("idle")
 	timer_count = 0.0
 	poison_collision_shape.disabled = true  # Disable the collision shape
 
 func play_poison():
-	print("Playing poison animation")
 	animated_sprite.play("poison")
 	sound_mashroom.play()
 	timer_count = 0.0
@@ -47,9 +45,7 @@ func _on_timer_timeout():
 
 
 func _on_body_entered(body):
-	print("Body entered the mushroom area")
 	if body is CharacterBody2D and not poison_collision_shape.disabled:
-		print("Player is in poison area - dying")
 		sound_death.play()
 		body.die()  # Call the player's death function
 		# Slow down time and remove the collision shape

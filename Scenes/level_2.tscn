@@ -250,9 +250,6 @@ position = Vector2(725, 423)
 [node name="falling-platform6" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
 position = Vector2(760, 444)
 
-[node name="falling-platform7" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
-position = Vector2(-28, 269)
-
 [node name="falling-platform2" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
 position = Vector2(900, 391)
 
@@ -373,7 +370,7 @@ position = Vector2(3441, 85)
 position = Vector2(3521, 22)
 
 [node name="player" parent="." instance=ExtResource("4_rl8my")]
-position = Vector2(276, 314)
+position = Vector2(23, 263)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(-2, -5)
