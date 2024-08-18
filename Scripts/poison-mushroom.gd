@@ -50,5 +50,5 @@ func _on_body_entered(body):
 		body.die()  # Call the player's death function
 		# Slow down time and remove the collision shape
 		Engine.time_scale = 0.5
-		body.get_node("CollisionShape2D").queue_free()
+		body.get_node("normal").queue_free()
 		timer.start()

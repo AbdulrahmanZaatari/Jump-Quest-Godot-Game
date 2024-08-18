@@ -8,7 +8,7 @@ func _on_body_entered(body):
 		print("You diedd!")
 		Engine.time_scale = 0.5
 		body.die() # Call the die function on the player
-		body.get_node("CollisionShape2D").queue_free()
+		body.get_node("normal").queue_free()
 		timer.start()
 
 func _on_timer_timeout():

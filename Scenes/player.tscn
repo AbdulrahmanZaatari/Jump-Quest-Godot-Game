@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b83vurwigomb0"]
+[gd_scene load_steps=19 format=3 uid="uid://b83vurwigomb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_eg7kd"]
 [ext_resource type="Texture2D" uid="uid://bhnmms6ge3not" path="res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png" id="2_uck8q"]
@@ -10,6 +10,14 @@ region = Rect2(0, 128, 33, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_27pq8"]
 atlas = ExtResource("2_uck8q")
 region = Rect2(33, 128, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6aqq"]
+atlas = ExtResource("2_uck8q")
+region = Rect2(33, 96, 33, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iuvtq"]
+atlas = ExtResource("2_uck8q")
+region = Rect2(66, 96, 33, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jap5h"]
 atlas = ExtResource("2_uck8q")
@@ -66,6 +74,17 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_f6aqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iuvtq")
+}],
+"loop": true,
+"name": &"duck",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_jap5h")
 }, {
 "duration": 1.0,
@@ -118,8 +137,8 @@ script = ExtResource("1_eg7kd")
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_kb4ba")
 animation = &"idle"
-frame_progress = 0.359565
+frame_progress = 0.113051
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -8)
+[node name="normal" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_n0btu")
