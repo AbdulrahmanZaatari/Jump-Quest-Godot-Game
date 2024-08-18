@@ -6,14 +6,14 @@
 [ext_resource type="AudioStream" uid="uid://dod3yxgri7wnm" path="res://Assets/Music/spike.mp3" id="4_lncd3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0g07n"]
-radius = 5.38516
+radius = 5.0
 
 [node name="spike" type="Area2D"]
 collision_mask = 2
 script = ExtResource("1_kk31g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(82, -1)
+position = Vector2(82, 0)
 shape = SubResource("CircleShape2D_0g07n")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

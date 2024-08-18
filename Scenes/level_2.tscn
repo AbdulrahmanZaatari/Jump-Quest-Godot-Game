@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://di8rfcise0t37"]
+[gd_scene load_steps=34 format=3 uid="uid://di8rfcise0t37"]
 
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_qg5ol"]
 [ext_resource type="Script" path="res://Scripts/level_2.gd" id="1_rnp8n"]
@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="10_c7r01"]
 [ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="12_tviyk"]
 [ext_resource type="AudioStream" uid="uid://dkxwk1nq5lxuf" path="res://Assets/Music/pixify-230092.mp3" id="13_tndbv"]
+[ext_resource type="PackedScene" uid="uid://ccwq318ebq53y" path="res://Scenes/flag.tscn" id="14_wwqxn"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8r8yt"]
 distance = -497.0
@@ -250,9 +251,6 @@ position = Vector2(725, 423)
 [node name="falling-platform6" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
 position = Vector2(760, 444)
 
-[node name="falling-platform7" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
-position = Vector2(-28, 269)
-
 [node name="falling-platform2" parent="Falling-Platforms" instance=ExtResource("3_0s7yv")]
 position = Vector2(900, 391)
 
@@ -373,7 +371,7 @@ position = Vector2(3441, 85)
 position = Vector2(3521, 22)
 
 [node name="player" parent="." instance=ExtResource("4_rl8my")]
-position = Vector2(276, 314)
+position = Vector2(23, 263)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(-2, -5)
@@ -494,14 +492,8 @@ position = Vector2(1544, 316)
 [node name="coin5" parent="coins" instance=ExtResource("3_e1huh")]
 position = Vector2(4007, 171)
 
-[node name="coin6" parent="coins" instance=ExtResource("3_e1huh")]
-position = Vector2(4119, 171)
-
 [node name="coin7" parent="coins" instance=ExtResource("3_e1huh")]
 position = Vector2(4023, 171)
-
-[node name="coin8" parent="coins" instance=ExtResource("3_e1huh")]
-position = Vector2(4103, 171)
 
 [node name="coin9" parent="coins" instance=ExtResource("3_e1huh")]
 position = Vector2(2966, 267)
@@ -559,5 +551,11 @@ text = "The End!"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_tndbv")
+
+[node name="Flag" parent="." instance=ExtResource("14_wwqxn")]
+position = Vector2(4070, 177)
+
+[node name="coin" parent="." instance=ExtResource("3_e1huh")]
+position = Vector2(4054, 171)
 
 [connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_back_pressed"]
