@@ -6,8 +6,8 @@ const JUMP_VELOCITY = 0
 var is_slippery = false  # Tracks if the player is on a slippery surface
 
 # New variables for slippery friction
-const SLIPPERY_ACCELERATION = 450
-const SLIPPERY_DECELERATION = 250
+const SLIPPERY_ACCELERATION = 680
+const SLIPPERY_DECELERATION = 200
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")

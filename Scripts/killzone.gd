@@ -5,7 +5,6 @@ extends Area2D
 func _on_body_entered(body):
 	if body is CharacterBody2D:
 		sound_player.play()
-		print("You diedd!")
 		Engine.time_scale = 0.5
 		body.die() # Call the die function on the player
 		body.get_node("normal").queue_free()

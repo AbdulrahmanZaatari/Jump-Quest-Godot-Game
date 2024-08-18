@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://bjpfo27b0338k"]
+
+[ext_resource type="Texture2D" uid="uid://dvcw63j1qq4vv" path="res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/frog-idle.png" id="1_nqaa0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6208"]
+atlas = ExtResource("1_nqaa0")
+region = Rect2(0, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ker2y"]
+atlas = ExtResource("1_nqaa0")
+region = Rect2(35, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejyvg"]
+atlas = ExtResource("1_nqaa0")
+region = Rect2(70, 0, 35, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6nd1"]
+atlas = ExtResource("1_nqaa0")
+region = Rect2(105, 0, 35, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lwcx1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6208")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ker2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejyvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6nd1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="frog" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lwcx1")
+autoplay = "default"
+frame_progress = 0.39736

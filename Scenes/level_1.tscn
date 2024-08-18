@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://ca5yg6ocl2x4b"]
+[gd_scene load_steps=42 format=3 uid="uid://ca5yg6ocl2x4b"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_o6psf"]
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_tk5iu"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cg0wnvd8s2j4r" path="res://Scenes/slime.tscn" id="10_rbjpf"]
 [ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="11_hbq23"]
 [ext_resource type="AudioStream" uid="uid://0gf3t0j2bg8v" path="res://Assets/Music/time_for_adventure.mp3" id="12_iikgm"]
+[ext_resource type="PackedScene" uid="uid://ccwq318ebq53y" path="res://Scenes/flag.tscn" id="13_gx0ud"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wpng1"]
 distance = -2.0
@@ -392,16 +393,13 @@ position = Vector2(2791, 75)
 position = Vector2(2472, 12)
 
 [node name="coin11" parent="Coins" instance=ExtResource("4_s1obk")]
-position = Vector2(3303, 10)
+position = Vector2(3303, 11)
 
 [node name="coin12" parent="Coins" instance=ExtResource("4_s1obk")]
-position = Vector2(3320, 10)
+position = Vector2(3320, 11)
 
 [node name="coin13" parent="Coins" instance=ExtResource("4_s1obk")]
-position = Vector2(3401, 11)
-
-[node name="coin14" parent="Coins" instance=ExtResource("4_s1obk")]
-position = Vector2(3386, 11)
+position = Vector2(3336, 11)
 
 [node name="Platforms" type="Node" parent="."]
 
@@ -582,5 +580,8 @@ text = "Back"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_iikgm")
+
+[node name="Flag" parent="." instance=ExtResource("13_gx0ud")]
+position = Vector2(3360, 18)
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
