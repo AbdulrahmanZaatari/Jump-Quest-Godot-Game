@@ -1,5 +1,6 @@
-[gd_scene load_steps=25 format=3 uid="uid://1ajccbv3wji3"]
+[gd_scene load_steps=26 format=3 uid="uid://1ajccbv3wji3"]
 
+[ext_resource type="Script" path="res://Scripts/level_3.gd" id="1_5l43s"]
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_hjt2v"]
 [ext_resource type="PackedScene" uid="uid://b83vurwigomb0" path="res://Scenes/player.tscn" id="2_pfqo7"]
 [ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="3_2oopw"]
@@ -115,6 +116,7 @@ corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
 [node name="Level 3" type="Node2D"]
+script = ExtResource("1_5l43s")
 
 [node name="TileMap" parent="." instance=ExtResource("1_hjt2v")]
 position = Vector2(112, 208)
@@ -426,3 +428,5 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_pqxu3")
 text = "Back"
 
 [node name="Timer" parent="CanvasLayer" instance=ExtResource("14_4p0ua")]
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
