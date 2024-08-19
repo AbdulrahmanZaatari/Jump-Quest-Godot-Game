@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://1ajccbv3wji3"]
+[gd_scene load_steps=25 format=3 uid="uid://1ajccbv3wji3"]
 
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_hjt2v"]
 [ext_resource type="PackedScene" uid="uid://b83vurwigomb0" path="res://Scenes/player.tscn" id="2_pfqo7"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://bjpfo27b0338k" path="res://Scenes/frog.tscn" id="10_y4t87"]
 [ext_resource type="PackedScene" uid="uid://ch84llym3tf57" path="res://Scenes/coin.tscn" id="11_l35he"]
 [ext_resource type="PackedScene" uid="uid://ccwq318ebq53y" path="res://Scenes/flag.tscn" id="12_0w48a"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="13_rxvkx"]
+[ext_resource type="PackedScene" uid="uid://bhr2b54fx8d18" path="res://Scenes/timer.tscn" id="14_4p0ua"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dblh2"]
 distance = -435.0
@@ -90,6 +92,27 @@ _data = {
 "RESET": SubResource("Animation_6iirf"),
 "move": SubResource("Animation_u8drp")
 }
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa5yk"]
+bg_color = Color(0.133005, 0.426857, 0.697169, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jtlbk"]
+bg_color = Color(0.0285919, 0.123784, 0.378974, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqxu3"]
+bg_color = Color(0.027451, 0.12549, 0.380392, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [node name="Level 3" type="Node2D"]
 
@@ -387,3 +410,19 @@ libraries = {
 "": SubResource("AnimationLibrary_3uvb5")
 }
 autoplay = "move"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 9.0
+offset_top = 65.0
+offset_right = 105.0
+offset_bottom = 111.0
+theme_override_fonts/font = ExtResource("13_rxvkx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_oa5yk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jtlbk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pqxu3")
+text = "Back"
+
+[node name="Timer" parent="CanvasLayer" instance=ExtResource("14_4p0ua")]
