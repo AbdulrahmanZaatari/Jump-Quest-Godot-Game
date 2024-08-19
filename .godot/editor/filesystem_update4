@@ -14,3 +14,4 @@ res://Scenes/level_2.tscn
 res://Scenes/frog.tscn
 res://Scripts/Timer.gd
 res://Scenes/timer.tscn
+res://Scripts/level_3.gd
