@@ -1,5 +1,4 @@
 res://Scenes/level_1.tscn
-res://Scripts/flag.gd
 res://Scenes/player.tscn
 res://Scenes/coin.tscn
 res://Scenes/poison-mushroom.tscn
@@ -10,8 +9,8 @@ res://Scenes/level_3.tscn
 res://Scenes/slippery_platform.tscn
 res://Scenes/falling-platform.tscn
 res://Scenes/spike.tscn
-res://flag.tscn
-res://Scenes/level_2.tscn
 res://Scenes/flag.tscn
-res://frog.tscn
+res://Scenes/level_2.tscn
 res://Scenes/frog.tscn
+res://Scripts/Timer.gd
+res://Scenes/timer.tscn

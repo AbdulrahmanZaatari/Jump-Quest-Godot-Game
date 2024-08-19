@@ -1,5 +1,7 @@
-Node
+CanvasLayer
 Label
+Control
+Node
 AnimatedSprite2D
 AudioStreamPlayer
 AudioStreamPlayer2D
@@ -11,4 +13,3 @@ AnimationTree
 StaticBody2D
 RigidBody2D
 Camera2D
-Timer

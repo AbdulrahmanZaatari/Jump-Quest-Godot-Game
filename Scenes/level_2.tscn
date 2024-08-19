@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://di8rfcise0t37"]
+[gd_scene load_steps=35 format=3 uid="uid://di8rfcise0t37"]
 
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_qg5ol"]
 [ext_resource type="Script" path="res://Scripts/level_2.gd" id="1_rnp8n"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://c4nbfn5adqxs2" path="res://Scenes/spike.tscn" id="7_ysk4v"]
 [ext_resource type="PackedScene" uid="uid://cfx0kq7prqarb" path="res://Scenes/poison-mushroom.tscn" id="9_7ykei"]
 [ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="10_c7r01"]
+[ext_resource type="PackedScene" uid="uid://bhr2b54fx8d18" path="res://Scenes/timer.tscn" id="12_06tr2"]
 [ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="12_tviyk"]
 [ext_resource type="AudioStream" uid="uid://dkxwk1nq5lxuf" path="res://Assets/Music/pixify-230092.mp3" id="13_tndbv"]
 [ext_resource type="PackedScene" uid="uid://ccwq318ebq53y" path="res://Scenes/flag.tscn" id="14_wwqxn"]
@@ -538,6 +539,8 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_l6upp")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cvg3h")
 text = "Back
 "
+
+[node name="Timer" parent="CanvasLayer" instance=ExtResource("12_06tr2")]
 
 [node name="The End" type="Label" parent="."]
 offset_left = 4017.0

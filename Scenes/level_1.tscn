@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ca5yg6ocl2x4b"]
+[gd_scene load_steps=43 format=3 uid="uid://ca5yg6ocl2x4b"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_o6psf"]
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_tk5iu"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cyrw8wdr5vnj" path="res://Scenes/Trampoline.tscn" id="9_nmnof"]
 [ext_resource type="PackedScene" uid="uid://cg0wnvd8s2j4r" path="res://Scenes/slime.tscn" id="10_rbjpf"]
 [ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="11_hbq23"]
+[ext_resource type="PackedScene" uid="uid://bhr2b54fx8d18" path="res://Scenes/timer.tscn" id="12_0eqgo"]
 [ext_resource type="AudioStream" uid="uid://0gf3t0j2bg8v" path="res://Assets/Music/time_for_adventure.mp3" id="12_iikgm"]
 [ext_resource type="PackedScene" uid="uid://ccwq318ebq53y" path="res://Scenes/flag.tscn" id="13_gx0ud"]
 
@@ -577,6 +578,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_cwetg")
 theme_override_styles/hover = SubResource("StyleBoxFlat_no1q4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxft")
 text = "Back"
+
+[node name="Timer" parent="CanvasLayer" instance=ExtResource("12_0eqgo")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_iikgm")
