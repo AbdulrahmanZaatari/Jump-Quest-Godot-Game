@@ -1,0 +1,143 @@
+[gd_scene load_steps=15 format=3 uid="uid://nnqfudmgwnqn"]
+
+[ext_resource type="Texture2D" uid="uid://budds8v1bj1e8" path="res://Assets/srorytelling2 images/9-2.png" id="1_8x5t6"]
+[ext_resource type="Script" path="res://Scripts/4.gd" id="1_56uqw"]
+[ext_resource type="FontFile" uid="uid://bc4wo4uw1jabl" path="res://Poppins-MediumItalic.ttf" id="2_ogakm"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="4_0pcpw"]
+[ext_resource type="Script" path="res://Scenes/Level2 dialogue/AnimationPlayer43.gd" id="4_2va84"]
+
+[sub_resource type="Animation" id="Animation_cnshg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_jan7s"]
+resource_name = "example4"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k4717"]
+_data = {
+"RESET": SubResource("Animation_cnshg"),
+"example4": SubResource("Animation_jan7s")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ge8u5"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g268p"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mws1e"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gir70"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uff3c"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77g0c"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="4" type="Node2D"]
+script = ExtResource("1_56uqw")
+
+[node name="9-2" type="Sprite2D" parent="."]
+position = Vector2(973, 508.5)
+scale = Vector2(1, 0.963889)
+texture = ExtResource("1_8x5t6")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 595.0
+offset_top = 71.0
+offset_right = 1030.0
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ogakm")
+theme_override_font_sizes/font_size = 40
+text = "Why is there always 
+a catch? What do
+you need?"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k4717")
+}
+script = ExtResource("4_2va84")
+
+[node name="Next" type="Button" parent="."]
+offset_left = 1575.0
+offset_top = 840.0
+offset_right = 1858.0
+offset_bottom = 948.0
+theme_override_fonts/font = ExtResource("4_0pcpw")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_ge8u5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g268p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mws1e")
+text = "Next"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 111.0
+offset_top = 855.0
+offset_right = 377.0
+offset_bottom = 959.0
+theme_override_fonts/font = ExtResource("4_0pcpw")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_gir70")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uff3c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_77g0c")
+text = "Back"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

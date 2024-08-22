@@ -1,0 +1,142 @@
+[gd_scene load_steps=15 format=3 uid="uid://cdjhbtx3a4ivk"]
+
+[ext_resource type="Script" path="res://Scripts/1.gd" id="1_b7egp"]
+[ext_resource type="Texture2D" uid="uid://baor4os6djpuc" path="res://Assets/srorytelling2 images/6-2.png" id="1_e5j3a"]
+[ext_resource type="FontFile" uid="uid://bc4wo4uw1jabl" path="res://Poppins-MediumItalic.ttf" id="2_f6tgd"]
+[ext_resource type="Script" path="res://Scenes/Level2 dialogue/AnimationPlayer1.gd" id="3_vjbky"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="4_2tnbu"]
+
+[sub_resource type="Animation" id="Animation_otslr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.8]
+}
+
+[sub_resource type="Animation" id="Animation_o6y7o"]
+resource_name = "example1"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sr71f"]
+_data = {
+"RESET": SubResource("Animation_otslr"),
+"example1": SubResource("Animation_o6y7o")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fv3i0"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_piijs"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4d76"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e7e4n"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfj31"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_av6cw"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="1" type="Node2D"]
+script = ExtResource("1_b7egp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 516)
+scale = Vector2(1, 0.961111)
+texture = ExtResource("1_e5j3a")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 50.0
+offset_top = 104.0
+offset_right = 760.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_f6tgd")
+theme_override_font_sizes/font_size = 40
+text = "Hey there, fox! Heard you’re having 
+some... jump troubles. I might 
+know a thing or two about that."
+horizontal_alignment = 1
+visible_characters = 80
+visible_ratio = 0.8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_sr71f")
+}
+script = ExtResource("3_vjbky")
+
+[node name="Next" type="Button" parent="."]
+offset_left = 1585.0
+offset_top = 850.0
+offset_right = 1856.0
+offset_bottom = 963.0
+theme_override_fonts/font = ExtResource("4_2tnbu")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_fv3i0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_piijs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u4d76")
+text = "Next"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 110.0
+offset_top = 844.0
+offset_right = 401.0
+offset_bottom = 955.0
+theme_override_fonts/font = ExtResource("4_2tnbu")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_e7e4n")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lfj31")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_av6cw")
+text = "Back"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

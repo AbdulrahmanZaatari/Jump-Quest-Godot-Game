@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://c8b1rcfak10ef"]
+
+[ext_resource type="Script" path="res://Scripts/8.gd" id="1_lug26"]
+[ext_resource type="Texture2D" uid="uid://bfc0nra588rir" path="res://Assets/srorytelling2 images/14.png" id="1_qxu2b"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="2_pi1bs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5g2o"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6x0c"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y4e4u"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7bc5"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jo6of"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iut0v"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="8" type="Node2D"]
+script = ExtResource("1_lug26")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(965, 507.5)
+scale = Vector2(1, 0.941667)
+texture = ExtResource("1_qxu2b")
+
+[node name="Next" type="Button" parent="."]
+offset_left = 1572.0
+offset_top = 859.0
+offset_right = 1835.0
+offset_bottom = 970.0
+theme_override_fonts/font = ExtResource("2_pi1bs")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5g2o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l6x0c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y4e4u")
+text = "Next"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 105.0
+offset_top = 858.0
+offset_right = 335.0
+offset_bottom = 965.0
+theme_override_fonts/font = ExtResource("2_pi1bs")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7bc5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jo6of")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iut0v")
+text = "Back"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
