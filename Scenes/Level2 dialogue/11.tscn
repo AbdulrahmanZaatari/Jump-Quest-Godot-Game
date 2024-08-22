@@ -1,0 +1,144 @@
+[gd_scene load_steps=15 format=3 uid="uid://ck2l52cqku3h5"]
+
+[ext_resource type="Script" path="res://Scripts/11.gd" id="1_1bm1n"]
+[ext_resource type="Texture2D" uid="uid://b6a858bkidp0t" path="res://Assets/srorytelling2 images/17.png" id="1_jileb"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="2_b4w5l"]
+[ext_resource type="FontFile" uid="uid://bc4wo4uw1jabl" path="res://Poppins-MediumItalic.ttf" id="4_4ako3"]
+[ext_resource type="Script" path="res://Scenes/Level2 dialogue/AnimationPlayer11.gd" id="5_sgo58"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uf58x"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3nsc"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy4pg"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_snkvb"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ygojp"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcjn5"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="Animation" id="Animation_o4x4t"]
+resource_name = "example11"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_lfhj3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_25abp"]
+_data = {
+"RESET": SubResource("Animation_lfhj3"),
+"example11": SubResource("Animation_o4x4t")
+}
+
+[node name="11" type="Node2D"]
+script = ExtResource("1_1bm1n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(967, 494.5)
+scale = Vector2(1, 0.910185)
+texture = ExtResource("1_jileb")
+
+[node name="Next" type="Button" parent="."]
+offset_left = 1597.0
+offset_top = 829.0
+offset_right = 1860.0
+offset_bottom = 940.0
+theme_override_fonts/font = ExtResource("2_b4w5l")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_uf58x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d3nsc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dy4pg")
+text = "Next"
+
+[node name="Back" type="Button" parent="."]
+offset_left = 66.0
+offset_top = 844.0
+offset_right = 296.0
+offset_bottom = 951.0
+theme_override_fonts/font = ExtResource("2_b4w5l")
+theme_override_font_sizes/font_size = 85
+theme_override_styles/normal = SubResource("StyleBoxFlat_snkvb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ygojp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bcjn5")
+text = "Back"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 928.0
+offset_top = 108.0
+offset_right = 1440.0
+offset_bottom = 341.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_4ako3")
+theme_override_font_sizes/font_size = 40
+text = "You’re just as bad as
+ that evil game designer!
+ I’ll figure this out
+ on my own!
+"
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_25abp")
+}
+script = ExtResource("5_sgo58")
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
