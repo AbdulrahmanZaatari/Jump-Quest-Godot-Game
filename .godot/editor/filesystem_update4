@@ -1,5 +1,6 @@
+res://Scripts/explosive.gd
 res://Scenes/level_1.tscn
-res://Scripts/hand.gd
+res://Scripts/spike.gd
 res://Scenes/player.tscn
 res://Scenes/level_2.tscn
 res://Scenes/level_3.tscn
@@ -9,3 +10,8 @@ res://Scenes/level_4.tscn
 res://Scenes/slime.tscn
 res://Scenes/hand.tscn
 res://Scenes/DialogueBox.tscn
+res://Scenes/explosive.tscn
+res://Scenes/spike.tscn
+res://Scenes/killzone.tscn
+res://Scripts/level_4.gd
+res://Scripts/hand.gd
