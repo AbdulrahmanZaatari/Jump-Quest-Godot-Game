@@ -49,4 +49,4 @@ func start_end_level_dialogue(body):
 	
 	# Return time to normal and go to the level selector
 	Engine.time_scale = 1.0
-	get_tree().change_scene_to_file("res://Scenes/level_menu")
+	get_tree().change_scene_to_file("res://Scenes/level_menu.tscn")

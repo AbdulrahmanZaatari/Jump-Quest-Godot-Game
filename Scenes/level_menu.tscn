@@ -140,10 +140,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_iytyf")
 text = "Level 3"
 
 [node name="Level4" type="Button" parent="."]
-offset_left = 69.0
+offset_left = 71.0
 offset_top = 749.0
-offset_right = 408.0
-offset_bottom = 861.0
+offset_right = 384.0
+offset_bottom = 858.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_opyis")

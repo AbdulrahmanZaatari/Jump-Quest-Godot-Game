@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1724504157
+::res://::1724509733
 default_bus_layout.tres::AudioBusLayout::451099110672992805::1724502404::0::1::::<><>::
 Game Boy Advance - Kirby & the Amazing Mirror - Master Hand and Crazy Hand.png::CompressedTexture2D::3438866260941274171::1724504156::1724504157::1::::<><>::
 gomarice_game_continue_02.ttf::FontFile::6851873984316344859::1724502404::1724502404::1::::<><>::
@@ -1631,31 +1631,32 @@ player-run-3.png::CompressedTexture2D::4538745221087061154::1724502402::17245024
 player-run-4.png::CompressedTexture2D::8400851959394824058::1724502402::1724502402::1::::<><>::
 player-run-5.png::CompressedTexture2D::6705515561950982467::1724502402::1724502402::1::::<><>::
 player-run-6.png::CompressedTexture2D::6250568477044389429::1724502402::1724502402::1::::<><>::
-::res://Scenes/::1724506126
+::res://Scenes/::1724508940
 background.tscn::PackedScene::4230279781960533070::1724502404::0::1::::<><>::uid://bcoy2gn1xxia6::::res://Assets/Sunny Land Collection Files/Assets/Environments/Treasure Hoard/Preview.png
 CanvasLayer.gd::GDScript::-1::1724502403::0::1::::<>CanvasLayer<>::
 coin.tscn::PackedScene::5334068790675136392::1724502404::0::1::::<><>::uid://dw22oecq3o2jn::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/coin.png<>res://Scripts/coin.gd<>uid://mrcvaixlrmh3::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sounds/coin.wav
+DialogueBox.tscn::PackedScene::5640437304773623594::1724508940::0::1::::<><>::res://Scripts/DialogueBox.gd
 falling-platform.tscn::PackedScene::4298744333547717427::1724502404::0::1::::<><>::res://Scripts/falling-platform.gd<>uid://chmfvsfux03ty::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png
 flag animation.png::CompressedTexture2D::873976875076542244::1724502404::1724502404::1::::<><>::
-flag.tscn::PackedScene::4959658256134574488::1724506048::0::1::::<><>::res://Scripts/flag.gd<>uid://mpmjh115372o::::res://Scenes/flag animation.png<>uid://cdtxeol6pvpbd::::res://level-passed-143039.mp3
+flag.tscn::PackedScene::4959658256134574488::1724508877::0::1::::<><>::res://Scripts/flag.gd<>uid://mpmjh115372o::::res://Scenes/flag animation.png<>uid://cdtxeol6pvpbd::::res://level-passed-143039.mp3
 frog.tscn::PackedScene::3049415996468963052::1724502870::0::1::::<><>::uid://dvcw63j1qq4vv::::res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/frog-idle.png
 Game Boy Advance - Kirby & the Amazing Mirror - Master Hand and Crazy Hand (1).png::CompressedTexture2D::5393047962102169465::1724506126::1724506127::1::::<><>::
+hand.tscn::PackedScene::3772047575233435044::1724508904::0::1::::<><>::uid://ci3oyhcrpca0h::::res://Scenes/Game Boy Advance - Kirby & the Amazing Mirror - Master Hand and Crazy Hand (1).png<>res://Scripts/hand.gd
 killzone.tscn::PackedScene::3160257518859140852::1724502404::0::1::::<><>::res://Scripts/killzone.gd<>uid://d21x70lw6wqqh::::res://Assets/Music/death.mp3
-level_1.tscn::PackedScene::4836242272555595519::1724506048::0::1::::<><>::res://Scripts/level_1.gd<>uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://cremwkwskmqj6::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>res://Scripts/game_manager.gd<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn<>uid://cg0wnvd8s2j4r::::res://Scenes/slime.tscn<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf<>uid://bhr2b54fx8d18::::res://Scenes/timer.tscn<>uid://0gf3t0j2bg8v::::res://Assets/Music/time_for_adventure.mp3<>uid://ccwq318ebq53y::::res://Scenes/flag.tscn
-level_2.tscn::PackedScene::7789938502143413356::1724506048::0::1::::<><>::uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>res://Scripts/level_2.gd<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn<>uid://b2ilxq60moh1t::::res://Scenes/falling-platform.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://c4nbfn5adqxs2::::res://Scenes/spike.tscn<>uid://cfx0kq7prqarb::::res://Scenes/poison-mushroom.tscn<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf<>uid://bhr2b54fx8d18::::res://Scenes/timer.tscn<>uid://cremwkwskmqj6::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>uid://dkxwk1nq5lxuf::::res://Assets/Music/pixify-230092.mp3<>uid://ccwq318ebq53y::::res://Scenes/flag.tscn
-level_3.tscn::PackedScene::1825460066695491360::1724506048::0::1::::<><>::res://Scripts/level_3.gd<>uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://c4nbfn5adqxs2::::res://Scenes/spike.tscn<>uid://b2ilxq60moh1t::::res://Scenes/falling-platform.tscn<>uid://cfx0kq7prqarb::::res://Scenes/poison-mushroom.tscn<>uid://dq5nows4b5hhp::::res://Scenes/slippery_platform.tscn<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://bjpfo27b0338k::::res://Scenes/frog.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://ccwq318ebq53y::::res://Scenes/flag.tscn<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf<>uid://bhr2b54fx8d18::::res://Scenes/timer.tscn
-level_menu.tscn::PackedScene::8208609373671078047::1724506048::0::1::::<><>::res://Scripts/level_menu.gd<>uid://bjtgcktgjqi57::::res://Assets/mainMenu images/level.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
+level_1.tscn::PackedScene::4836242272555595519::1724508876::0::1::::<><>::res://Scripts/level_1.gd<>uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://cremwkwskmqj6::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>res://Scripts/game_manager.gd<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn<>uid://cg0wnvd8s2j4r::::res://Scenes/slime.tscn<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf<>uid://bhr2b54fx8d18::::res://Scenes/timer.tscn<>uid://0gf3t0j2bg8v::::res://Assets/Music/time_for_adventure.mp3<>uid://ccwq318ebq53y::::res://Scenes/flag.tscn
+level_2.tscn::PackedScene::7789938502143413356::1724508877::0::1::::<><>::uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>res://Scripts/level_2.gd<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn<>uid://b2ilxq60moh1t::::res://Scenes/falling-platform.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://c4nbfn5adqxs2::::res://Scenes/spike.tscn<>uid://cfx0kq7prqarb::::res://Scenes/poison-mushroom.tscn<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf<>uid://bhr2b54fx8d18::::res://Scenes/timer.tscn<>uid://cremwkwskmqj6::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>uid://dkxwk1nq5lxuf::::res://Assets/Music/pixify-230092.mp3<>uid://ccwq318ebq53y::::res://Scenes/flag.tscn
+level_3.tscn::PackedScene::1825460066695491360::1724508877::0::1::::<><>::res://Scripts/level_3.gd<>uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://cyrw8wdr5vnj::::res://Scenes/Trampoline.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://c4nbfn5adqxs2::::res://Scenes/spike.tscn<>uid://b2ilxq60moh1t::::res://Scenes/falling-platform.tscn<>uid://cfx0kq7prqarb::::res://Scenes/poison-mushroom.tscn<>uid://dq5nows4b5hhp::::res://Scenes/slippery_platform.tscn<>uid://cy4gl8575v0qv::::res://Scenes/platform.tscn<>uid://bjpfo27b0338k::::res://Scenes/frog.tscn<>uid://ch84llym3tf57::::res://Scenes/coin.tscn<>uid://ccwq318ebq53y::::res://Scenes/flag.tscn<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf<>uid://bhr2b54fx8d18::::res://Scenes/timer.tscn
+level_4.tscn::PackedScene::2259527343091494309::1724508877::0::1::::<><>::uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://bt0hcp1akng5i::::res://Scenes/hand.tscn
+level_menu.tscn::PackedScene::8208609373671078047::1724508877::0::1::::<><>::res://Scripts/level_menu.gd<>uid://bjtgcktgjqi57::::res://Assets/mainMenu images/level.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
 main_page.tscn::PackedScene::8888030497086076514::1724502404::0::1::::<><>::uid://d0o7v16n3supj::::res://Assets/mainMenu images/main.png<>res://Scripts/main_page.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
 music.tscn::PackedScene::5990400710034148504::1724502404::0::1::::<><>::uid://0gf3t0j2bg8v::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/music/time_for_adventure.mp3
 platform.tscn::PackedScene::6517626296365831201::1724502404::0::1::::<><>::uid://chmfvsfux03ty::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png
-player.tscn::PackedScene::4761766800842752315::1724506048::0::1::::<><>::res://Scripts/player.gd<>uid://bhnmms6ge3not::::res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png
+player.tscn::PackedScene::4761766800842752315::1724508876::0::1::::<><>::res://Scripts/player.gd<>uid://bhnmms6ge3not::::res://Assets/Sunny Land Collection Files/Assets/Packs/Sunnyland/spritesheets/player.png
 poison-mushroom.tscn::PackedScene::5172802947190171571::1724502404::0::1::::<><>::res://Scripts/poison-mushroom.gd<>uid://c2fhehxumvym5::::res://Assets/Sunny Land Collection Files/Assets/Characters/sunny-mushroom/spritesheets/sunny-mushroom-breath.png<>uid://d21x70lw6wqqh::::res://Assets/Music/death.mp3<>uid://bupdhq38sales::::res://Assets/Music/mashroom.wav
-level_4.tscn::PackedScene::2259527343091494309::1724506048::0::1::::<><>::uid://k71tke07ge8i::::res://Scenes/tile_map.tscn<>uid://b83vurwigomb0::::res://Scenes/player.tscn<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn<>uid://bt0hcp1akng5i::::res://Scenes/hand.tscn
-hand.tscn::PackedScene::3772047575233435044::1724506048::0::1::::<><>::uid://bo82vim2c4xdr::::res://Game Boy Advance - Kirby & the Amazing Mirror - Master Hand and Crazy Hand.png
 scene1.tscn::PackedScene::6364744884248152023::1724502404::0::1::::<><>::res://Scripts/scene1.gd<>uid://dlgwuq7wq5il::::res://Assets/mainMenu images/1.png<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
 scene_2.tscn::PackedScene::3481938710343784706::1724502404::0::1::::<><>::uid://c20yifp54kdwu::::res://Assets/mainMenu images/2.png<>res://Scripts/scene_2.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
 scene_3.tscn::PackedScene::534977084805659899::1724502404::0::1::::<><>::uid://dre2fi8vp5v4u::::res://Assets/mainMenu images/3.png<>res://Scripts/scene_3.gd<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
-slime.tscn::PackedScene::5246943971376778599::1724506048::0::1::::<><>::uid://d2o855vwjig26::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png<>res://Scripts/slime.gd<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn
+slime.tscn::PackedScene::5246943971376778599::1724508877::0::1::::<><>::uid://d2o855vwjig26::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/slime_green.png<>res://Scripts/slime.gd<>uid://bla38ko3n1kbk::::res://Scenes/killzone.tscn
 slippery_platform.tscn::PackedScene::8345030388570580921::1724502404::0::1::::<><>::res://Scripts/slippery_platform.gd<>uid://chmfvsfux03ty::::res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/platforms.png
 spike.tscn::PackedScene::6835225118806558731::1724502404::0::1::::<><>::res://Scripts/spike.gd<>uid://u1asc1kt5wdm::::res://Assets/spikes-removebg-preview.png<>uid://d21x70lw6wqqh::::res://Assets/Music/death.mp3<>uid://dod3yxgri7wnm::::res://Assets/Music/spike.mp3
 storylevel2.tscn::PackedScene::581949326689105081::1724502871::0::1::::<><>::res://Scripts/storylevel2.gd<>uid://31ykj7hsi32x::::res://Assets/srorytelling2 images/5.png<>uid://bc4wo4uw1jabl::::res://Poppins-MediumItalic.ttf<>uid://c4vdmmfb21ygp::::res://gomarice_game_continue_02.ttf
@@ -1685,7 +1686,7 @@ AnimationPlayer10.gd::GDScript::-1::1724502403::0::1::::<>AnimationPlayer<>::
 AnimationPlayer11.gd::GDScript::-1::1724502403::0::1::::<>AnimationPlayer<>::
 AnimationPlayer12.gd::GDScript::-1::1724502403::0::1::::<>AnimationPlayer<>::
 AnimationPlayer43.gd::GDScript::-1::1724502403::0::1::::<>AnimationPlayer<>::
-::res://Scripts/::1724506013
+::res://Scripts/::1724508940
 1.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
 2.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
 3.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
@@ -1699,9 +1700,11 @@ AnimationPlayer43.gd::GDScript::-1::1724502403::0::1::::<>AnimationPlayer<>::
 11.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
 12.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
 coin.gd::GDScript::-1::1724502404::0::1::::<>Area2D<>::
+DialogueBox.gd::GDScript::-1::1724508213::0::1::::<>Control<>::
 falling-platform.gd::GDScript::-1::1724502404::0::1::::<>RigidBody2D<>::
 flag.gd::GDScript::-1::1724502404::0::1::::<>Area2D<>::
 game_manager.gd::GDScript::-1::1724502404::0::1::::<>Node<>::
+hand.gd::GDScript::-1::1724508940::0::1::::<>AnimatedSprite2D<>::
 killzone.gd::GDScript::-1::1724502404::0::1::::<>Area2D<>::
 level_1.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
 level_2.gd::GDScript::-1::1724502404::0::1::::<>Node2D<>::
