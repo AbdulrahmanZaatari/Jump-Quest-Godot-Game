@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://bt0hcp1akng5i"]
+
+[ext_resource type="Texture2D" uid="uid://ci3oyhcrpca0h" path="res://Scenes/Game Boy Advance - Kirby & the Amazing Mirror - Master Hand and Crazy Hand (1).png" id="1_1jolj"]
+[ext_resource type="Script" path="res://Scripts/hand.gd" id="2_knhw8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3fmv"]
+atlas = ExtResource("1_1jolj")
+region = Rect2(0, 0, 59, 51)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xm00f"]
+atlas = ExtResource("1_1jolj")
+region = Rect2(59, 0, 59, 51)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_noau6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3fmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xm00f")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2p2de"]
+a = Vector2(1.24211, -122.959)
+b = Vector2(2.48423, 37.726)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(37, 6)
+scale = Vector2(0.805085, 0.715686)
+sprite_frames = SubResource("SpriteFrames_noau6")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.835303
+script = ExtResource("2_knhw8")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-155.263, 26.5479)
+shape = SubResource("SegmentShape2D_2p2de")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -18,3 +18,10 @@ res://Scenes/Level2 dialogue/11.tscn
 res://Scenes/Level2 dialogue/12.tscn
 res://Scenes/flag.tscn
 res://Scenes/level_menu.tscn
+res://Scenes/slime.tscn
+res://Scripts/level_menu.gd
+res://Scenes/level_4.tscn
+res://Scenes/hand.tscn
+res://Scenes/DialogueBox.tscn
+res://Scripts/DialogueBox.gd
+res://Scripts/hand.gd
