@@ -137,13 +137,13 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_m62pf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7iabl")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_iytyf")
-text = "Level3"
+text = "Level 3"
 
 [node name="Level4" type="Button" parent="."]
-offset_left = 69.0
+offset_left = 71.0
 offset_top = 749.0
-offset_right = 408.0
-offset_bottom = 861.0
+offset_right = 384.0
+offset_bottom = 858.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_opyis")
@@ -164,4 +164,5 @@ text = "Back"
 [connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="Level4" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
