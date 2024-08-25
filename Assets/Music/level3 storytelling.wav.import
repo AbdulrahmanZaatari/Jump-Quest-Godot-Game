@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ct3l57srrwhi5"
+path="res://.godot/imported/level3 storytelling.wav-a779d086ab599afabfe905204c50e450.sample"
+
+[deps]
+
+source_file="res://Assets/Music/level3 storytelling.wav"
+dest_files=["res://.godot/imported/level3 storytelling.wav-a779d086ab599afabfe905204c50e450.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=1
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

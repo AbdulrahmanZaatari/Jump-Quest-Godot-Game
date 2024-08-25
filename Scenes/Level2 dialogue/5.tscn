@@ -89,18 +89,18 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_kg2du")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(974.5, 506)
-scale = Vector2(1.00885, 0.925926)
+position = Vector2(578.502, 326.5)
+scale = Vector2(0.596352, 0.593519)
 texture = ExtResource("2_8uq12")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -45.0
-offset_top = 9.0
-offset_right = 686.0
-offset_bottom = 360.0
+offset_left = -173.0
+offset_top = -48.0
+offset_right = 558.0
+offset_bottom = 303.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_mon1i")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 22
 text = "Find me the
 Sacred Fly of Legendary
 Bounciness, and I'll show you
@@ -118,10 +118,10 @@ libraries = {
 script = ExtResource("4_c0184")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1606.0
-offset_top = 856.0
-offset_right = 1894.0
-offset_bottom = 967.0
+offset_left = 909.0
+offset_top = 512.0
+offset_right = 1116.0
+offset_bottom = 602.0
 theme_override_fonts/font = ExtResource("1_hxq0g")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_ccnmg")
@@ -130,10 +130,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_q0umo")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 85.0
-offset_top = 848.0
-offset_right = 315.0
-offset_bottom = 955.0
+offset_left = 61.0
+offset_top = 522.0
+offset_right = 248.0
+offset_bottom = 608.0
 theme_override_fonts/font = ExtResource("1_hxq0g")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_jjj74")

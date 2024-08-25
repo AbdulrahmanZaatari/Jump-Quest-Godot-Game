@@ -65,7 +65,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_dpdfa"]
 resource_name = "example10"
-length = 4.0
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -73,7 +73,7 @@ tracks/0/path = NodePath("Label:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -89,15 +89,15 @@ _data = {
 script = ExtResource("1_qy1v3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(970.5, 499.5)
-scale = Vector2(1.00885, 0.921296)
+position = Vector2(584, 327)
+scale = Vector2(0.602081, 0.592592)
 texture = ExtResource("1_4y5fo")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1597.0
-offset_top = 829.0
-offset_right = 1860.0
-offset_bottom = 940.0
+offset_left = 947.0
+offset_top = 508.0
+offset_right = 1117.0
+offset_bottom = 594.0
 theme_override_fonts/font = ExtResource("2_cwwhe")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_7mawo")
@@ -106,10 +106,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_s43dh")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 66.0
-offset_top = 844.0
-offset_right = 296.0
-offset_bottom = 951.0
+offset_left = 48.0
+offset_top = 505.0
+offset_right = 221.0
+offset_bottom = 591.0
 theme_override_fonts/font = ExtResource("2_cwwhe")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_7onna")
@@ -118,19 +118,20 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_3pccl")
 text = "Back"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 249.0
-offset_top = 33.0
-offset_right = 800.0
-offset_bottom = 266.0
+offset_left = 54.0
+offset_top = 15.0
+offset_right = 560.0
+offset_bottom = 248.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_a1fth")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 25
 text = "Oh, you really thought I’d 
 help you? The fly’s just a
-regular old bug. But thanks
-for the entertainment!"
+regular old bug. But
+thanks for the
+entertainment!"
 horizontal_alignment = 1
-vertical_alignment = 2
+vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

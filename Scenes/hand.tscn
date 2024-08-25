@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bt0hcp1akng5i"]
+[gd_scene load_steps=8 format=3 uid="uid://bt0hcp1akng5i"]
 
 [ext_resource type="Texture2D" uid="uid://ci3oyhcrpca0h" path="res://Scenes/Game Boy Advance - Kirby & the Amazing Mirror - Master Hand and Crazy Hand (1).png" id="1_1jolj"]
 [ext_resource type="Script" path="res://Scripts/hand.gd" id="2_knhw8"]
+[ext_resource type="AudioStream" uid="uid://wb1mg288pp3s" path="res://Assets/Music/conversation.wav" id="3_kf2wl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3fmv"]
 atlas = ExtResource("1_1jolj")
@@ -44,5 +45,8 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-155.263, 26.5479)
 shape = SubResource("SegmentShape2D_2p2de")
+
+[node name="hand" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kf2wl")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -65,7 +65,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_wrdiy"]
 resource_name = "example12"
-length = 4.0
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -73,7 +73,7 @@ tracks/0/path = NodePath("Label:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -89,15 +89,15 @@ _data = {
 script = ExtResource("1_e1plb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(958, 495.5)
-scale = Vector2(1, 0.913889)
+position = Vector2(581, 324)
+scale = Vector2(0.607292, 0.596296)
 texture = ExtResource("1_7d0l6")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1597.0
-offset_top = 829.0
-offset_right = 1860.0
-offset_bottom = 940.0
+offset_left = 950.0
+offset_top = 537.0
+offset_right = 1142.0
+offset_bottom = 623.0
 theme_override_fonts/font = ExtResource("2_gs3dq")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_7iph6")
@@ -106,10 +106,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_feflg")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 66.0
-offset_top = 844.0
-offset_right = 296.0
-offset_bottom = 951.0
+offset_left = 43.0
+offset_top = 533.0
+offset_right = 226.0
+offset_bottom = 619.0
 theme_override_fonts/font = ExtResource("2_gs3dq")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_7yau7")
@@ -118,17 +118,18 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_dktpn")
 text = "Back"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 1110.0
-offset_top = 119.0
-offset_right = 1674.0
-offset_bottom = 352.0
+offset_left = 507.0
+offset_top = 45.0
+offset_right = 1071.0
+offset_bottom = 278.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_dc8e0")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 text = "Good luck with that!
 The game designer’s
- watching your every
- move."
+ watching your
+ every move."
+horizontal_alignment = 1
 vertical_alignment = 1
 visible_characters = 0
 visible_ratio = 0.0

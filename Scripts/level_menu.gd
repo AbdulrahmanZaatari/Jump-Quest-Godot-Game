@@ -3,6 +3,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if level4.level4!= null or  level4.end!=null :
+		level4.end.stop()
+		level4.level4.stop()
 	musicPlayer.play_music()
 
 

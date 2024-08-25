@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://do7kukic5tboh"]
+[gd_scene load_steps=19 format=3 uid="uid://do7kukic5tboh"]
 
 [ext_resource type="Script" path="res://Scripts/level_menu.gd" id="1_jcs2g"]
 [ext_resource type="Texture2D" uid="uid://bjtgcktgjqi57" path="res://Assets/mainMenu images/level.png" id="1_vit5l"]
@@ -74,6 +74,20 @@ corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kggtc"]
+bg_color = Color(0.00392157, 0.156863, 0.356863, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bk3m4"]
+bg_color = Color(0.00392157, 0.156863, 0.356863, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y60td"]
 bg_color = Color(0.00392157, 0.254902, 0.478431, 1)
 corner_radius_top_left = 30
@@ -99,15 +113,15 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_jcs2g")
 
 [node name="Level" type="Sprite2D" parent="."]
-position = Vector2(965, 495.5)
-scale = Vector2(1.88086, 0.969727)
+position = Vector2(578.5, 326.75)
+scale = Vector2(1.12402, 0.629395)
 texture = ExtResource("1_vit5l")
 
 [node name="Level1" type="Button" parent="."]
-offset_left = 69.0
-offset_top = 166.0
-offset_right = 373.0
-offset_bottom = 282.0
+offset_left = 54.0
+offset_top = 92.0
+offset_right = 291.0
+offset_bottom = 165.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_lukmm")
@@ -116,10 +130,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_2xtk5")
 text = "Level 1"
 
 [node name="Level2" type="Button" parent="."]
-offset_left = 67.0
-offset_top = 361.0
-offset_right = 388.0
-offset_bottom = 469.0
+offset_left = 56.0
+offset_top = 223.0
+offset_right = 288.0
+offset_bottom = 298.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_xkomv")
@@ -128,10 +142,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ofns1")
 text = "Level 2"
 
 [node name="Level3" type="Button" parent="."]
-offset_left = 71.0
-offset_top = 558.0
-offset_right = 387.0
-offset_bottom = 664.0
+offset_left = 56.0
+offset_top = 377.0
+offset_right = 286.0
+offset_bottom = 449.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_m62pf")
@@ -140,20 +154,22 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_iytyf")
 text = "Level 3"
 
 [node name="Level4" type="Button" parent="."]
-offset_left = 71.0
-offset_top = 749.0
-offset_right = 384.0
-offset_bottom = 858.0
+offset_left = 60.0
+offset_top = 528.0
+offset_right = 293.0
+offset_bottom = 599.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_opyis")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kggtc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bk3m4")
 text = "Level 4"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 1681.0
-offset_top = 875.0
-offset_right = 1917.0
-offset_bottom = 984.0
+offset_left = 913.0
+offset_top = 541.0
+offset_right = 1127.0
+offset_bottom = 612.0
 theme_override_fonts/font = ExtResource("2_o6aet")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_y60td")
