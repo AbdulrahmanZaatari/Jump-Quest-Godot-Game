@@ -201,7 +201,7 @@ layer_0/tile_data = PackedInt32Array(327673, 0, 14, 327674, 0, 14, 327675, 0, 14
 layer_1/tile_data = PackedInt32Array(131076, 0, 0, 131077, 0, 0, 131072, 0, 0, 131081, 0, 0, 131082, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 262156, 0, 0, 262157, 0, 0, 65621, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 393231, 0, 0, 524305, 0, 0, 524310, 0, 0, 262170, 0, 0, 30, 0, 0, 458801, 0, 0, 458802, 0, 0, 786492, 0, 0, 524352, 0, 0, 458829, 0, 0, 786491, 0, 0, 65620, 0, 0, 65619, 0, 0, 65622, 0, 0, 65623, 0, 0, 65656, 0, 0, 262257, 0, 0, 458887, 0, 0, 458888, 0, 0, 327830, 0, 0, 327831, 0, 0, 327832, 0, 0, 327833, 0, 0, 327834, 0, 0, 327835, 0, 0, 327836, 0, 0, 160, 0, 0, 196770, 0, 0, 131240, 0, 0, 131241, 0, 0, 131242, 0, 0, 262317, 0, 0, 65713, 0, 0, -65352, 0, 0, -327487, 0, 0, -327486, 0, 0, -327485, 0, 0, -327484, 0, 0, -327483, 0, 0, -327482, 0, 0, -327481, 0, 0, -327480, 0, 0, -327479, 0, 0, -327478, 0, 0, -327477, 0, 0, -327476, 0, 0, -327475, 0, 0, -327474, 0, 0, -327473, 0, 0, -327472, 0, 0, -327471, 0, 0, -327470, 0, 0, -327469, 0, 0, -327468, 0, 0, -327467, 0, 0, -327466, 0, 0, -327465, 0, 0, -327464, 0, 0, -327463, 0, 0, -327462, 0, 0, -393023, 65536, 7, -393022, 65536, 8, -393016, 0, 8, -393015, 0, 7, -393021, 65536, 6, -393020, 65536, 6, -393019, 65536, 6, -393017, 65536, 6, -589626, 131072, 4, -458554, 196608, 7, -393018, 131072, 8, -327488, 0, 0)
 
 [node name="player" parent="." instance=ExtResource("2_0jaxs")]
-position = Vector2(3199, 130)
+position = Vector2(134, 218)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(161, -8)
@@ -251,6 +251,30 @@ position = Vector2(995, 136)
 [node name="Trampoline6" parent="trampoline" instance=ExtResource("8_arwef")]
 position = Vector2(723, 215)
 
+[node name="Trampoline7" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(1684, 39)
+
+[node name="Trampoline8" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(1571, 89)
+
+[node name="Trampoline9" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(1939, 135)
+
+[node name="Trampoline10" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(2258, 103)
+
+[node name="Trampoline11" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(2354, 72)
+
+[node name="Trampoline12" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(2531, 89)
+
+[node name="Trampoline13" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(2595, 40)
+
+[node name="Trampoline14" parent="trampoline" instance=ExtResource("8_arwef")]
+position = Vector2(2707, 8)
+
 [node name="spikes" type="Node" parent="."]
 
 [node name="spike2" parent="spikes" instance=ExtResource("11_u3833")]
@@ -258,6 +282,9 @@ position = Vector2(229, 271)
 
 [node name="spike" parent="spikes" instance=ExtResource("11_u3833")]
 position = Vector2(822, 317)
+
+[node name="spike3" parent="spikes" instance=ExtResource("11_u3833")]
+position = Vector2(2198, 318)
 
 [node name="platforms" type="Node" parent="."]
 
@@ -293,6 +320,16 @@ libraries = {
 }
 autoplay = "move"
 
+[node name="slippery-platform3" parent="Slippery" instance=ExtResource("10_5h5rn")]
+position = Vector2(2344, 286)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Slippery/slippery-platform3"]
+root_node = NodePath("../../slippery-platform3")
+libraries = {
+"": SubResource("AnimationLibrary_47g0w")
+}
+autoplay = "move"
+
 [node name="Falling" type="Node" parent="."]
 
 [node name="falling-platform2" parent="Falling" instance=ExtResource("12_j4q3w")]
@@ -301,73 +338,49 @@ position = Vector2(1018, 373)
 [node name="falling-platform" parent="Falling" instance=ExtResource("12_j4q3w")]
 position = Vector2(962, 347)
 
-[node name="Trampoline" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(1684, 39)
-
-[node name="poison-mushroom" parent="." instance=ExtResource("2_big0f")]
-position = Vector2(1418, 229)
-
-[node name="Trampoline2" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(1571, 89)
-
-[node name="falling-platform" parent="." instance=ExtResource("12_j4q3w")]
+[node name="falling-platform3" parent="Falling" instance=ExtResource("12_j4q3w")]
 position = Vector2(2135, 178)
 
-[node name="falling-platform2" parent="." instance=ExtResource("12_j4q3w")]
+[node name="falling-platform4" parent="Falling" instance=ExtResource("12_j4q3w")]
 position = Vector2(2201, 220)
 
-[node name="falling-platform3" parent="." instance=ExtResource("12_j4q3w")]
+[node name="falling-platform5" parent="Falling" instance=ExtResource("12_j4q3w")]
 position = Vector2(2260, 257)
-
-[node name="spike" parent="." instance=ExtResource("11_u3833")]
-position = Vector2(2198, 318)
-
-[node name="Trampoline3" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(1939, 135)
-
-[node name="slippery-platform" parent="." instance=ExtResource("10_5h5rn")]
-position = Vector2(2344, 286)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="slippery-platform"]
-libraries = {
-"": SubResource("AnimationLibrary_47g0w")
-}
-autoplay = "move"
-
-[node name="Trampoline4" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(2258, 103)
-
-[node name="Trampoline5" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(2354, 72)
-
-[node name="Trampoline6" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(2531, 89)
-
-[node name="poison-mushroom2" parent="." instance=ExtResource("2_big0f")]
-position = Vector2(2776, 244)
-
-[node name="Trampoline7" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(2595, 40)
-
-[node name="Trampoline8" parent="." instance=ExtResource("8_arwef")]
-position = Vector2(2707, 8)
-
-[node name="coin" parent="." instance=ExtResource("14_xhix8")]
-position = Vector2(3352, 125)
-
-[node name="coin2" parent="." instance=ExtResource("14_xhix8")]
-position = Vector2(3368, 125)
-
-[node name="coin3" parent="." instance=ExtResource("14_xhix8")]
-position = Vector2(3386, 125)
-
-[node name="coin4" parent="." instance=ExtResource("14_xhix8")]
-position = Vector2(3404, 126)
-
-[node name="coin5" parent="." instance=ExtResource("14_xhix8")]
-position = Vector2(3424, 126)
 
 [node name="level4" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_18x3g")
+
+[node name="coins" type="Node" parent="."]
+
+[node name="coin" parent="coins" instance=ExtResource("14_xhix8")]
+position = Vector2(3352, 125)
+
+[node name="coin2" parent="coins" instance=ExtResource("14_xhix8")]
+position = Vector2(3368, 125)
+
+[node name="coin3" parent="coins" instance=ExtResource("14_xhix8")]
+position = Vector2(3386, 125)
+
+[node name="coin4" parent="coins" instance=ExtResource("14_xhix8")]
+position = Vector2(3404, 126)
+
+[node name="coin5" parent="coins" instance=ExtResource("14_xhix8")]
+position = Vector2(3424, 126)
+
+[node name="mushrooms" type="Node" parent="."]
+
+[node name="poison-mushroom" parent="mushrooms" instance=ExtResource("2_big0f")]
+position = Vector2(1418, 229)
+
+[node name="poison-mushroom2" parent="mushrooms" instance=ExtResource("2_big0f")]
+position = Vector2(2776, 244)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 3476.0
+offset_top = 25.0
+offset_right = 3532.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Press X"
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

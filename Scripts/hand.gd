@@ -33,16 +33,15 @@ func start_end_level_dialogue(body):
 	body.set_process(false)  # Stop the player from processing input
 
 	var lines = [
-		"Well, well, well... look who's finally here!",
+		"WHAT! Flippy? How did you even get here?",
 		"You must be the bravest",
 		"or perhaps the most foolish player I've seen.",
-		"The Game Designer has been watching you closely",
-		"and I must say...",
-		"Your determination is... amusing!", 
-		"But let's see if you're truly worthy.",
-		"I've taken your jumping ability",
-		"and I've got to say...",
-		"...you look pretty funny hopping around without it!",
+		"Do you think you can actually beat me?",
+		"AHAHAHAHA",
+		"If you do, no one is going to publish the game", 
+		"I was just trying to see if you're truly worthy.",
+		"When I took your jumping ability",
+		"...you looked pretty funny without it!",
 		"But don't worry, I'm not that cruel...",
 		"well, maybe just a little.",
 		"If you press on, I might just return your jump ability.",

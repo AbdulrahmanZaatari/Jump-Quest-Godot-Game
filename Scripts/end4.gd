@@ -16,4 +16,4 @@ func _on_next_pressed():
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://Scenes/the end/end3.tscn")
+	get_tree().change_scene_to_file("res://Scenes/the end/end2.tscn")
