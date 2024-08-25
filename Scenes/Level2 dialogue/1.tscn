@@ -106,7 +106,7 @@ having some... jump troubles.
 I might know a thing or two
  about that."
 horizontal_alignment = 1
-visible_characters = 79
+visible_characters = 81
 visible_ratio = 0.8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

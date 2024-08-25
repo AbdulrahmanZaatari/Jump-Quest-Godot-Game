@@ -31,3 +31,6 @@ res://Scenes/the end/end1.tscn
 res://Scenes/the end/end2.tscn
 res://Scenes/the end/end3.tscn
 res://Scenes/the end/end4.tscn
+res://Scripts/end2.gd
+res://Scripts/end4.gd
+res://Scripts/hand.gd
