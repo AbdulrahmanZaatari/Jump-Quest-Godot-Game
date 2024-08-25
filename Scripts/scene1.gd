@@ -1,14 +1,16 @@
 extends Node2D
 
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	musicPlayer.play_music()
+	if musicPlayer.music_player != null:
+		musicPlayer.music_player.stop()
+	
+	musicPlayer.play_sound()
+	
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 
 func _on_next_1_pressed():

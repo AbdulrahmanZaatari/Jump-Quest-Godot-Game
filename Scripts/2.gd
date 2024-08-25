@@ -3,7 +3,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	if musicPlayer.music_player != null:
+		musicPlayer.music_player.stop()
+	
+	musicPlayer.play_level3Story()
 
 
 

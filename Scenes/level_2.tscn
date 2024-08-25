@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://di8rfcise0t37"]
+[gd_scene load_steps=36 format=3 uid="uid://di8rfcise0t37"]
 
 [ext_resource type="PackedScene" uid="uid://k71tke07ge8i" path="res://Scenes/tile_map.tscn" id="1_qg5ol"]
 [ext_resource type="Script" path="res://Scripts/level_2.gd" id="1_rnp8n"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://cremwkwskmqj6" path="res://Assets/brackeys_platformer_assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="12_tviyk"]
 [ext_resource type="AudioStream" uid="uid://dkxwk1nq5lxuf" path="res://Assets/Music/pixify-230092.mp3" id="13_tndbv"]
 [ext_resource type="PackedScene" uid="uid://ccwq318ebq53y" path="res://Scenes/flag.tscn" id="14_wwqxn"]
+[ext_resource type="Script" path="res://Scenes/flag.gd" id="16_l6270"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8r8yt"]
 distance = -497.0
@@ -372,10 +373,10 @@ position = Vector2(3441, 85)
 position = Vector2(3521, 22)
 
 [node name="player" parent="." instance=ExtResource("4_rl8my")]
-position = Vector2(23, 263)
+position = Vector2(3991, 172)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(-2, -5)
+position = Vector2(1, -4)
 zoom = Vector2(4, 4)
 
 [node name="Killzone" parent="." instance=ExtResource("5_wwb7h")]
@@ -468,7 +469,7 @@ position = Vector2(2804, 348)
 position = Vector2(3396, 301)
 
 [node name="spike10" parent="spikes" instance=ExtResource("7_ysk4v")]
-position = Vector2(3509, 284)
+position = Vector2(5225, 244)
 
 [node name="spike12" parent="spikes" instance=ExtResource("7_ysk4v")]
 position = Vector2(3701, 268)
@@ -557,8 +558,10 @@ stream = ExtResource("13_tndbv")
 
 [node name="Flag" parent="." instance=ExtResource("14_wwqxn")]
 position = Vector2(4070, 177)
+script = ExtResource("16_l6270")
 
 [node name="coin" parent="." instance=ExtResource("3_e1huh")]
 position = Vector2(4054, 171)
 
 [connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_back_pressed"]
+[connection signal="body_entered" from="Flag" to="." method="_on_flag_body_entered"]

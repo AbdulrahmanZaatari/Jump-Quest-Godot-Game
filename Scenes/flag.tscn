@@ -1,6 +1,5 @@
-[gd_scene load_steps=11 format=3 uid="uid://ccwq318ebq53y"]
+[gd_scene load_steps=10 format=3 uid="uid://ccwq318ebq53y"]
 
-[ext_resource type="Script" path="res://Scripts/flag.gd" id="1_0evmn"]
 [ext_resource type="Texture2D" uid="uid://mpmjh115372o" path="res://Scenes/flag animation.png" id="1_s7tgl"]
 [ext_resource type="AudioStream" uid="uid://cdtxeol6pvpbd" path="res://level-passed-143039.mp3" id="3_o4awu"]
 
@@ -52,7 +51,6 @@ animations = [{
 
 [node name="Flag" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_0evmn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -23)

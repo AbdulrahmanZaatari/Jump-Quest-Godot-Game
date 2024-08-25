@@ -51,8 +51,8 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_fci78")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(967.5, 500)
-scale = Vector2(1.00156, 0.92963)
+position = Vector2(582.501, 325.5)
+scale = Vector2(0.60052, 0.606482)
 texture = ExtResource("2_fkgek")
 
 [node name="Label" type="Label" parent="."]
@@ -72,10 +72,10 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1661.0
-offset_top = 871.0
-offset_right = 1886.0
-offset_bottom = 957.0
+offset_left = 924.0
+offset_top = 538.0
+offset_right = 1128.0
+offset_bottom = 624.0
 theme_override_fonts/font = ExtResource("3_gdlf2")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_gxb67")
@@ -84,10 +84,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_3dh68")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 477.0
-offset_top = 866.0
-offset_right = 700.0
-offset_bottom = 952.0
+offset_left = 287.0
+offset_top = 540.0
+offset_right = 467.0
+offset_bottom = 626.0
 theme_override_fonts/font = ExtResource("3_gdlf2")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_jtagf")

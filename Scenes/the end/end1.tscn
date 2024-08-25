@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://c3nhvjypsfdnr"]
+
+[ext_resource type="Script" path="res://Scripts/end1.gd" id="1_82lx6"]
+[ext_resource type="Texture2D" uid="uid://b47pcm002pwaj" path="res://Assets/mainMenu images/19.png" id="1_ag0px"]
+[ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="2_obwcl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pfy3"]
+bg_color = Color(0.215686, 0.682353, 0.196078, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pq2v6"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f4c2g"]
+bg_color = Color(0.109804, 0.231373, 0.113725, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="End1" type="Node2D"]
+script = ExtResource("1_82lx6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576.5, 326.5)
+scale = Vector2(0.596354, 0.599074)
+texture = ExtResource("1_ag0px")
+
+[node name="Next" type="Button" parent="."]
+offset_left = 939.0
+offset_top = 549.0
+offset_right = 1114.0
+offset_bottom = 620.0
+theme_override_fonts/font = ExtResource("2_obwcl")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_2pfy3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pq2v6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f4c2g")
+text = "Next"
+
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

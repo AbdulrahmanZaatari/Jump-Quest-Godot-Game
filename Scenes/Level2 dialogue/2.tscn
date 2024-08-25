@@ -23,7 +23,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_y727x"]
 resource_name = "example2"
-length = 4.0
+length = 2.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -31,10 +31,10 @@ tracks/0/path = NodePath("Label:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 2.5, 2.5001, 2.5002, 2.5003),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [0.0, 1.0, 0.0, 0.0, 0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6qa7b"]
@@ -89,18 +89,18 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_ejd4k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(978, 503)
-scale = Vector2(1.00938, 0.927778)
+position = Vector2(580.998, 325)
+scale = Vector2(0.595836, 0.598148)
 texture = ExtResource("1_1mfji")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 980.0
-offset_top = 35.0
-offset_right = 1415.0
-offset_bottom = 306.0
+offset_left = 496.0
+offset_top = -34.0
+offset_right = 931.0
+offset_bottom = 237.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_ogakm")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 25
 text = "Finally! Someone 
 who can help me. 
 Can you teach me 
@@ -117,10 +117,10 @@ libraries = {
 script = ExtResource("3_mq4d4")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1642.0
-offset_top = 812.0
-offset_right = 1907.0
-offset_bottom = 944.0
+offset_left = 900.0
+offset_top = 506.0
+offset_right = 1104.0
+offset_bottom = 592.0
 theme_override_fonts/font = ExtResource("4_xfaeo")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_4egkh")
@@ -129,10 +129,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_mf61q")
 text = "Next"
 
 [node name="back" type="Button" parent="."]
-offset_left = 57.0
-offset_top = 828.0
-offset_right = 343.0
-offset_bottom = 961.0
+offset_left = 30.0
+offset_top = 522.0
+offset_right = 242.0
+offset_bottom = 608.0
 theme_override_fonts/font = ExtResource("4_xfaeo")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_a6avd")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bpuxa0ip6f1mk"]
+[gd_scene load_steps=11 format=3 uid="uid://bpuxa0ip6f1mk"]
 
 [ext_resource type="Texture2D" uid="uid://c20yifp54kdwu" path="res://Assets/mainMenu images/2.png" id="1_0r21r"]
 [ext_resource type="Script" path="res://Scripts/scene_2.gd" id="1_xpyom"]
 [ext_resource type="FontFile" uid="uid://c4vdmmfb21ygp" path="res://gomarice_game_continue_02.ttf" id="3_grl80"]
+[ext_resource type="AudioStream" uid="uid://d18mv52ugdku3" path="res://Assets/Music/storytelling level1.wav" id="4_ylceh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_37vkx"]
 bg_color = Color(0.12549, 0.556863, 0.172549, 1)
@@ -50,15 +51,15 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_xpyom")
 
 [node name="box2" type="Sprite2D" parent="."]
-position = Vector2(942.5, 508.625)
-scale = Vector2(1.01094, 0.93588)
+position = Vector2(560.499, 325.625)
+scale = Vector2(0.613022, 0.596991)
 texture = ExtResource("1_0r21r")
 
 [node name="Next2" type="Button" parent="."]
-offset_left = 1683.0
-offset_top = 893.0
-offset_right = 1859.0
-offset_bottom = 975.0
+offset_left = 949.0
+offset_top = 556.0
+offset_right = 1112.0
+offset_bottom = 619.0
 theme_override_fonts/font = ExtResource("3_grl80")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_37vkx")
@@ -67,16 +68,19 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_cje67")
 text = "Next"
 
 [node name="Back2" type="Button" parent="."]
-offset_left = 130.0
-offset_top = 897.0
-offset_right = 315.0
-offset_bottom = 979.0
+offset_left = 95.0
+offset_top = 569.0
+offset_right = 253.0
+offset_bottom = 638.0
 theme_override_fonts/font = ExtResource("3_grl80")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_2s0rl")
 theme_override_styles/hover = SubResource("StyleBoxFlat_dca7d")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_efxx2")
 text = "Back "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ylceh")
 
 [connection signal="pressed" from="Next2" to="." method="_on_next_2_pressed"]
 [connection signal="pressed" from="Back2" to="." method="_on_back_2_pressed"]

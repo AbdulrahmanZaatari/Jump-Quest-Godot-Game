@@ -89,23 +89,24 @@ corner_radius_bottom_left = 30
 script = ExtResource("1_b7egp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(960, 516)
-scale = Vector2(1, 0.961111)
+position = Vector2(575.5, 323)
+scale = Vector2(0.599479, 0.603704)
 texture = ExtResource("1_e5j3a")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 50.0
-offset_top = 104.0
-offset_right = 760.0
-offset_bottom = 375.0
+offset_left = 19.0
+offset_top = 38.0
+offset_right = 464.0
+offset_bottom = 258.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_f6tgd")
-theme_override_font_sizes/font_size = 40
-text = "Hey there, fox! Heard you’re having 
-some... jump troubles. I might 
-know a thing or two about that."
+theme_override_font_sizes/font_size = 29
+text = "Hey there, fox! Heard you’re
+having some... jump troubles.
+I might know a thing or two
+ about that."
 horizontal_alignment = 1
-visible_characters = 81
+visible_characters = 79
 visible_ratio = 0.8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -115,10 +116,10 @@ libraries = {
 script = ExtResource("3_vjbky")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1585.0
-offset_top = 850.0
-offset_right = 1856.0
-offset_bottom = 963.0
+offset_left = 905.0
+offset_top = 526.0
+offset_right = 1114.0
+offset_bottom = 615.0
 theme_override_fonts/font = ExtResource("4_2tnbu")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_fv3i0")
@@ -127,10 +128,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_u4d76")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 110.0
-offset_top = 844.0
-offset_right = 401.0
-offset_bottom = 955.0
+offset_left = 26.0
+offset_top = 532.0
+offset_right = 239.0
+offset_bottom = 623.0
 theme_override_fonts/font = ExtResource("4_2tnbu")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_e7e4n")

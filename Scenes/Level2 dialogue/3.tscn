@@ -23,7 +23,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_q5q4o"]
 resource_name = "example3"
-length = 4.0
+length = 2.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -31,7 +31,7 @@ tracks/0/path = NodePath("Label:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4),
+"times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -85,18 +85,18 @@ bg_color = Color(0.109804, 0.231373, 0.113725, 1)
 script = ExtResource("1_jqdmp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(964.5, 491.5)
-scale = Vector2(1.0026, 0.913889)
+position = Vector2(577.002, 325)
+scale = Vector2(0.598956, 0.605556)
 texture = ExtResource("2_b7i62")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 975.0
-offset_top = 27.0
-offset_right = 1463.0
-offset_bottom = 292.0
+offset_left = 489.0
+offset_top = 17.0
+offset_right = 977.0
+offset_bottom = 282.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_bq8t8")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 30
 text = "Hmm... I could, but I 
 need you to do
 something for me
@@ -110,10 +110,10 @@ libraries = {
 script = ExtResource("3_r3p8u")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1563.0
-offset_top = 817.0
-offset_right = 1854.0
-offset_bottom = 930.0
+offset_left = 874.0
+offset_top = 509.0
+offset_right = 1111.0
+offset_bottom = 595.0
 theme_override_fonts/font = ExtResource("4_0awkb")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_sp1db")
@@ -122,10 +122,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gf2nj")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 84.0
-offset_top = 814.0
-offset_right = 365.0
-offset_bottom = 925.0
+offset_left = 42.0
+offset_top = 513.0
+offset_right = 266.0
+offset_bottom = 599.0
 theme_override_fonts/font = ExtResource("4_0awkb")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_se8yb")

@@ -65,7 +65,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_g5arw"]
 resource_name = "example9"
-length = 4.0
+length = 2.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -73,7 +73,7 @@ tracks/0/path = NodePath("Label:visible_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4),
+"times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -89,15 +89,15 @@ _data = {
 script = ExtResource("1_01esu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(978, 504)
-scale = Vector2(1.01458, 0.918519)
+position = Vector2(578.002, 330)
+scale = Vector2(0.597915, 0.596296)
 texture = ExtResource("1_37oyy")
 
 [node name="Next" type="Button" parent="."]
-offset_left = 1597.0
-offset_top = 829.0
-offset_right = 1860.0
-offset_bottom = 940.0
+offset_left = 947.0
+offset_top = 543.0
+offset_right = 1136.0
+offset_bottom = 629.0
 theme_override_fonts/font = ExtResource("2_c1ak0")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_8a87y")
@@ -106,10 +106,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_8k76p")
 text = "Next"
 
 [node name="Back" type="Button" parent="."]
-offset_left = 66.0
-offset_top = 844.0
-offset_right = 296.0
-offset_bottom = 951.0
+offset_left = 20.0
+offset_top = 538.0
+offset_right = 202.0
+offset_bottom = 624.0
 theme_override_fonts/font = ExtResource("2_c1ak0")
 theme_override_font_sizes/font_size = 85
 theme_override_styles/normal = SubResource("StyleBoxFlat_u2cw2")
@@ -118,13 +118,13 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_dteyx")
 text = "Back"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 484.0
-offset_top = 692.0
-offset_right = 878.0
-offset_bottom = 866.0
+offset_left = 196.0
+offset_top = 420.0
+offset_right = 590.0
+offset_bottom = 594.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_qu1kt")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 25
 text = "I got your Sacred
  Fly. Now, teach me
  how to jump!"

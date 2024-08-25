@@ -1,14 +1,17 @@
 extends AnimatedSprite2D
-
+@onready var hand=$hand
 @onready var DialogueBoxScene = preload("res://Scenes/DialogueBox.tscn")
 var dialogue_box  # Declare the dialogue_box variable
 @onready var collision = $Area2D/CollisionShape2D
 
 func _ready():
 	# Instance the DialogueBox scene
+
+
 	dialogue_box = DialogueBoxScene.instantiate()
 	add_child(dialogue_box)
 	dialogue_box.hide()  # Hide initially
+	
 
 func _on_area_2d_body_entered(body):
 	if body is CharacterBody2D:
@@ -18,6 +21,14 @@ func _on_area_2d_body_entered(body):
 		start_end_level_dialogue(body)
 
 func start_end_level_dialogue(body):
+	if musicPlayer.music_player != null or musicPlayer.sound != null or level4.level4 !=null or level4.end !=null :
+		
+		musicPlayer.music_player.stop()
+		musicPlayer.sound.stop()
+		level4.end.stop()
+		level4.level4.stop()
+	hand.play()
+	
 	dialogue_box.show()
 	body.set_process(false)  # Stop the player from processing input
 
@@ -56,4 +67,4 @@ func start_end_level_dialogue(body):
 	
 	# Return time to normal and go to the level selector
 	Engine.time_scale = 1.0
-	get_tree().change_scene_to_file("res://Scenes/level_menu.tscn")
+	get_tree().change_scene_to_file("res://Scenes/the end/end1.tscn")
